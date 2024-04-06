@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
@@ -16,8 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <main className='bg-background text-foreground h-dvh flex justify-center flex-col items-center'>
+      <body className={cn('bg-background text-foreground', inter.className)}>
+        <main className='min-h-dvh max-w-5xl mx-auto px-2 py-10'>
           {children}
         </main>
       </body>
