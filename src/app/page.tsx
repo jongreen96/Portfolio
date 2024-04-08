@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import H1 from '@/components/ui/h1';
 import profilePhoto from '@/lib/assets/profile-photo.jpg';
 import { Github, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
@@ -10,8 +11,8 @@ export default function Home() {
       <section className='flex justify-between'>
         <div className='text-lg space-y-2'>
           <div>
-            <h1 className='text-4xl font-bold tracking-tighter'>Jon Green</h1>
-            <p className='mt-1'>Full Stack Web Developer</p>
+            <H1>Jon Green</H1>
+            <p className='mt-1 tracking-tight'>Full Stack Web Developer</p>
             <Link
               href='https://www.google.com/maps/place/Sheffield'
               target='_blank'
