@@ -18,9 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn('bg-background text-foreground', inter.className)}>
-        <main className='min-h-dvh max-w-5xl mx-auto px-2 py-10'>
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );
