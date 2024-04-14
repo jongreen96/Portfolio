@@ -1,8 +1,13 @@
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import H1 from '@/components/ui/h1';
 import H2 from '@/components/ui/h2';
+import H3 from '@/components/ui/h3';
 import P from '@/components/ui/p';
+import gvg from '@/lib/assets/greenvinylgraphics.png';
+import mygpt from '@/lib/assets/my-gpt.png';
 import profilePhoto from '@/lib/assets/profile-photo.jpg';
+import recapit from '@/lib/assets/recapit.png';
 import { Github, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -64,7 +69,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className='space-y-4'>
         <H2>About</H2>
         <P>
           I am a full stack web engineer who is passionate about creating
@@ -72,17 +77,132 @@ export default function Home() {
           primarily through self-learning on platforms like CodeCademy, and have
           delved deep into technologies such as Next.js, React, Postgres, and
           TailwindCSS. I thrive on continuously expanding my knowledge and
-          exploring new frameworks and technologies and firmly believe that
-          dedication to continuous learning and growth is the cornerstone of
-          success in the ever-evolving field of web development.
+          exploring new frameworks and technologies, and I am always looking to
+          learn more.
         </P>
       </section>
 
-      <section>
+      <section className='space-y-6'>
         <H2>Projects</H2>
-        <P className='mt-4 text-center text-destructive'>
-          Cool shadcn element showing projects here
-        </P>
+
+        <div className='space-y-2'>
+          <div className='flex gap-4'>
+            <Link
+              href='https://my-gpt.app'
+              target='_blank'
+              className='shrink-0'
+            >
+              <Image
+                src={mygpt}
+                alt='My-GPT website preview'
+                width={160}
+                height={160}
+                className='rounded w-40'
+              />
+            </Link>
+            <div>
+              <Link href='https://my-gpt.app' target='_blank'>
+                <H3>My-GPT</H3>
+              </Link>
+              <P>
+                My-GPT is a web application that allows users to access all
+                OpenAI models such as gpt-4, dall-e-3 and gpt-4-vision without a
+                monthly subscription.
+              </P>
+            </div>
+          </div>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>Next.js</Badge>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>Tailwind CSS</Badge>
+            <Badge variant='outline'>Prisma</Badge>
+            <Badge variant='outline'>Stripe</Badge>
+            <Badge variant='outline'>Clerk</Badge>
+            <Badge variant='outline'>Shadcn/ui</Badge>
+            <Badge variant='outline'>OpenAI API</Badge>
+            <Badge variant='outline'>Supabase</Badge>
+            <Badge variant='outline'>OpenAI API</Badge>
+          </div>
+        </div>
+
+        <div className='space-y-2'>
+          <div className='flex gap-4'>
+            <Link
+              href='https://greenvinylgraphics.com/'
+              target='_blank'
+              className='shrink-0'
+            >
+              <Image
+                src={gvg}
+                alt='Green Vinyl Graphics website preview'
+                width={160}
+                height={160}
+                className='rounded w-40'
+              />
+            </Link>
+            <div>
+              <Link href='https://greenvinylgraphics.com/' target='_blank'>
+                <H3>Green Vinyl Graphics</H3>
+              </Link>
+              <P>
+                Green Vinyl Graphics is a store that sells vector templates used
+                to wrap mobile devices and all products sold are producted by
+                me. This website was a final project for my Web Development
+                course.
+              </P>
+            </div>
+          </div>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>Express.js</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='outline'>Redux</Badge>
+            <Badge variant='outline'>Axios</Badge>
+            <Badge variant='outline'>Stripe</Badge>
+            <Badge variant='outline'>Vite</Badge>
+            <Badge variant='outline'>Netlify</Badge>
+            <Badge variant='outline'>Bcrypt</Badge>
+          </div>
+        </div>
+
+        <div className='space-y-2'>
+          <div className='flex gap-4'>
+            <Link
+              href='https://recapit-reddit.netlify.app/'
+              target='_blank'
+              className='shrink-0'
+            >
+              <Image
+                src={recapit}
+                alt='Recapit Website Preview'
+                width={160}
+                height={160}
+                className='rounded w-40'
+              />
+            </Link>
+            <div>
+              <Link href='https://recapit-reddit.netlify.app/' target='_blank'>
+                <H3>Recapit</H3>
+              </Link>
+              <P>
+                Recapit is a simple Reddit clone that pulls the top posts from a
+                given subreddit for a set time period. This was the first
+                website I created on my coding journey. <br /> (Built before the
+                Reddit API changes)
+              </P>
+            </div>
+          </div>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='outline'>Redux</Badge>
+            <Badge variant='outline'>Stripe</Badge>
+            <Badge variant='outline'>Netlify</Badge>
+            <Badge variant='outline'>Reddit API</Badge>
+          </div>
+        </div>
       </section>
 
       <section>
