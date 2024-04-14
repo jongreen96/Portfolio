@@ -245,6 +245,47 @@ export default function Home() {
 
       <section className='space-y-6'>
         <H2>Education</H2>
+
+        <div className='space-y-4'>
+          <div>
+            <span className='flex gap-4 items-baseline'>
+              <H3>CodeCademy</H3>
+              <P>2022 - 2023</P>
+            </span>
+
+            <P>
+              I completed the CodeCademy Full Stack Web Developer Bootcamp. I
+              learned the fundamentals of web development and gained experience
+              working with React, Node.js, and SQL.
+            </P>
+          </div>
+
+          <div>
+            <span className='flex gap-4 items-baseline'>
+              <H3>Dearne Valley College</H3>
+              <P>2012 - 2013</P>
+            </span>
+
+            <P>
+              I attended Dearne Valley College where I completed a level 3
+              Diploma in IT, with a focus on Web Development and database
+              design.
+            </P>
+          </div>
+
+          <div>
+            <span className='flex gap-4 items-baseline'>
+              <H3>Wingfield Academy</H3>
+              <P>2007 - 2012</P>
+            </span>
+
+            <P>
+              I completed the CodeCademy Full Stack Web Developer Bootcamp. I
+              learned the fundamentals of web development and gained experience
+              working with React, Node.js, and SQL.
+            </P>
+          </div>
+        </div>
       </section>
     </main>
   );
