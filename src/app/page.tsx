@@ -205,24 +205,46 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className='space-y-6'>
         <H2>Skills</H2>
-        <P>
-          Currently I work mostly with TypeScript, Next.js, React, Node.js and
-          Prisma. I am always looking to learn new technologies and frameworks
-          and in the past I have used:
-        </P>
+        <div className='space-y-2'>
+          <P>
+            Currently I work mostly with Next.js, React, Node.js and PostgreSQL.
+            I am always looking to learn new technologies and frameworks and in
+            the past I have used:
+          </P>
 
-        <P className='mt-4 text-center text-destructive'>
-          Cool shadcn element showing skills here
-        </P>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>HTML</Badge>
+            <Badge variant='secondary'>CSS</Badge>
+            <Badge variant='secondary'>Next.js</Badge>
+            <Badge variant='secondary'>Node.js</Badge>
+            <Badge variant='secondary'>Express.js</Badge>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>TypeScript</Badge>
+            <Badge variant='secondary'>Tailwind CSS</Badge>
+            <Badge variant='secondary'>SQL</Badge>
+            <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='outline'>Git</Badge>
+            <Badge variant='outline'>GitHub</Badge>
+            <Badge variant='outline'>Prisma</Badge>
+            <Badge variant='outline'>Redux</Badge>
+            <Badge variant='outline'>Stripe</Badge>
+            <Badge variant='outline'>Clerk</Badge>
+            <Badge variant='outline'>Vite</Badge>
+            <Badge variant='outline'>Axios</Badge>
+            <Badge variant='outline'>Netlify</Badge>
+            <Badge variant='outline'>Bcrypt</Badge>
+            <Badge variant='outline'>Data Structures & Algorithms</Badge>
+            <Badge variant='outline'>YAML</Badge>
+            <Badge variant='outline'>Swagger</Badge>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section className='space-y-6'>
         <H2>Education</H2>
-        <P className='mt-4 text-center text-destructive'>
-          Element showing education here
-        </P>
       </section>
     </main>
   );
