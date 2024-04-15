@@ -1,3 +1,4 @@
+import P from '@/components/ui/p';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -19,6 +20,9 @@ export default function RootLayout({
     <html lang='en'>
       <body className={cn('bg-background text-foreground', inter.className)}>
         {children}
+        <P className='text-center pb-5'>
+          Jon Green - {new Date().getFullYear()}
+        </P>
       </body>
     </html>
   );
