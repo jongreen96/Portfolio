@@ -69,8 +69,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-4'>
+      <section className='space-y-10'>
         <H2>About</H2>
+
         <P>
           I am a full stack web engineer who is passionate about creating
           user-friendly and performant web applications. I have honed my skills
@@ -82,7 +83,7 @@ export default function Home() {
         </P>
       </section>
 
-      <section className='space-y-6'>
+      <section className='space-y-10'>
         <H2>Projects</H2>
 
         <div className='space-y-2'>
@@ -205,7 +206,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-6'>
+      <section className='space-y-10'>
         <H2>Skills</H2>
         <div className='space-y-2'>
           <P>
@@ -243,10 +244,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-6'>
+      <section className='space-y-10'>
         <H2>Education</H2>
 
-        <div className='space-y-4'>
+        <div className='space-y-10'>
           <div>
             <span className='flex gap-4 items-baseline'>
               <H3>CodeCademy</H3>
