@@ -4,11 +4,13 @@ import H1 from '@/components/ui/h1';
 import H2 from '@/components/ui/h2';
 import H3 from '@/components/ui/h3';
 import P from '@/components/ui/p';
+import github from '@/lib/assets/github.png';
 import gvg from '@/lib/assets/greenvinylgraphics.png';
 import mygpt from '@/lib/assets/my-gpt.png';
 import profilePhoto from '@/lib/assets/profile-photo.jpg';
 import recapit from '@/lib/assets/recapit.png';
-import { Github, Mail, MapPin, Phone, Twitter } from 'lucide-react';
+import x from '@/lib/assets/x.png';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -31,27 +33,27 @@ export default function Home() {
           </div>
 
           <div className='pt-2 space-x-2'>
-            <Button variant='secondary' size='icon' asChild>
+            <Button variant='outline' size='icon' asChild>
               <Link href='tel: +44 7769674943' target='_blank'>
                 <Phone className='text-muted-foreground' size={20} />
               </Link>
             </Button>
 
-            <Button variant='secondary' size='icon' asChild>
+            <Button variant='outline' size='icon' asChild>
               <Link href='mailto: jongreen1996@gmail.com' target='_blank'>
                 <Mail className='text-muted-foreground' size={20} />
               </Link>
             </Button>
 
-            <Button variant='secondary' size='icon' asChild>
+            <Button variant='outline' size='icon' asChild>
               <Link href='https://github.com/jongreen96' target='_blank'>
-                <Github className='text-muted-foreground' size={20} />
+                <Image src={github} alt='logo' width={19} height={19} />
               </Link>
             </Button>
 
-            <Button variant='secondary' size='icon' asChild>
+            <Button variant='outline' size='icon' asChild>
               <Link href='https://twitter.com/JonGreenDotDev' target='_blank'>
-                <Twitter className='text-muted-foreground' size={20} />
+                <Image src={x} alt='logo' width={19} height={19} />
               </Link>
             </Button>
           </div>
