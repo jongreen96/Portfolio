@@ -31,25 +31,25 @@ export default function Home() {
           </div>
 
           <div className='pt-2 space-x-2'>
-            <Button variant='outline' size='icon' asChild>
+            <Button variant='secondary' size='icon' asChild>
               <Link href='tel: +44 7769674943' target='_blank'>
                 <Phone className='text-muted-foreground' size={20} />
               </Link>
             </Button>
 
-            <Button variant='outline' size='icon' asChild>
+            <Button variant='secondary' size='icon' asChild>
               <Link href='mailto: jongreen1996@gmail.com' target='_blank'>
                 <Mail className='text-muted-foreground' size={20} />
               </Link>
             </Button>
 
-            <Button variant='outline' size='icon' asChild>
+            <Button variant='secondary' size='icon' asChild>
               <Link href='https://github.com/jongreen96' target='_blank'>
                 <Github className='text-muted-foreground' size={20} />
               </Link>
             </Button>
 
-            <Button variant='outline' size='icon' asChild>
+            <Button variant='secondary' size='icon' asChild>
               <Link href='https://twitter.com/JonGreenDotDev' target='_blank'>
                 <Twitter className='text-muted-foreground' size={20} />
               </Link>
@@ -76,10 +76,10 @@ export default function Home() {
           I am a full stack web engineer who is passionate about creating
           user-friendly and performant web applications. I have honed my skills
           primarily through self-learning on platforms like CodeCademy, and have
-          delved deep into technologies such as Next.js, React, Postgres, and
-          TailwindCSS. I thrive on continuously expanding my knowledge and
-          exploring new frameworks and technologies, and I am always looking to
-          learn more.
+          focused on technologies such as Next.js, React, Postgres, and
+          TailwindCSS. I enjoy continuously expanding my knowledge and exploring
+          new technologies, and I am always looking for opportunities to learn
+          and grow.
         </P>
       </section>
 
@@ -106,9 +106,9 @@ export default function Home() {
                 <H3>My-GPT</H3>
               </Link>
               <P>
-                My-GPT is a web application that allows users to access all
-                OpenAI models such as gpt-4, dall-e-3 and gpt-4-vision without a
-                monthly subscription.
+                My-GPT is a Next.js web application that allows users to access
+                all OpenAI Chat and Image Generation models without the need for
+                a montly subscription.
               </P>
             </div>
           </div>
@@ -148,9 +148,8 @@ export default function Home() {
               </Link>
               <P>
                 Green Vinyl Graphics is a store that sells vector templates used
-                to wrap mobile devices and all products sold are producted by
-                me. This website was a final project for my Web Development
-                course.
+                to wrap mobile devices, all products sold are created by me.
+                This website was a final project for my Web Development course.
               </P>
             </div>
           </div>
@@ -190,8 +189,8 @@ export default function Home() {
               <P>
                 Recapit is a simple Reddit clone that pulls the top posts from a
                 given subreddit for a set time period. This was the first
-                website I created on my coding journey. <br /> (Built before the
-                Reddit API changes)
+                website I created on my coding journey. (Built before the Reddit
+                API changes)
               </P>
             </div>
           </div>
@@ -281,9 +280,9 @@ export default function Home() {
             </span>
 
             <P>
-              I completed the CodeCademy Full Stack Web Developer Bootcamp. I
-              learned the fundamentals of web development and gained experience
-              working with React, Node.js, and SQL.
+              I attended Wingfield Academy where I received over 5 A*-C level 2
+              certificates including a distinction in webpage creation and
+              computer graphics.
             </P>
           </div>
         </div>
