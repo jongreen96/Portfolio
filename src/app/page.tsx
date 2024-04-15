@@ -98,7 +98,7 @@ export default function Home() {
                 alt='My-GPT website preview'
                 width={160}
                 height={160}
-                className='rounded w-40'
+                className='rounded h-full object-cover'
               />
             </Link>
             <div>
@@ -139,7 +139,7 @@ export default function Home() {
                 alt='Green Vinyl Graphics website preview'
                 width={160}
                 height={160}
-                className='rounded w-40'
+                className='rounded h-full object-cover'
               />
             </Link>
             <div>
@@ -180,7 +180,7 @@ export default function Home() {
                 alt='Recapit Website Preview'
                 width={160}
                 height={160}
-                className='rounded w-40'
+                className='rounded h-full object-cover'
               />
             </Link>
             <div>
