@@ -1,3 +1,4 @@
+import Background from '@/components/background';
 import P from '@/components/ui/p';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={cn('bg-background text-foreground', inter.className)}>
+        <Background />
         {children}
         <P className='text-center pb-5'>
           Jon Green - {new Date().getFullYear()}
