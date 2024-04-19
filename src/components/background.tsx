@@ -49,7 +49,7 @@ export default function Background() {
         const dy = mouse.y - dot.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < 100) {
-          const force = (100 - distance) / 500;
+          const force = (100 - distance) / 100;
           dot.vx -= dx * force * 0.01;
           dot.vy -= dy * force * 0.01;
         }
