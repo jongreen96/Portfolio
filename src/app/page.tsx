@@ -35,25 +35,45 @@ export default function Home() {
           <div className='pt-2 space-x-2'>
             <Button variant='outline' size='icon' asChild>
               <Link href='tel: +44 7769674943' target='_blank'>
-                <Phone className='text-muted-foreground' size={20} />
+                <Phone
+                  className='text-muted-foreground'
+                  size={20}
+                  aria-label='phone'
+                />
               </Link>
             </Button>
 
             <Button variant='outline' size='icon' asChild>
               <Link href='mailto: jongreen1996@gmail.com' target='_blank'>
-                <Mail className='text-muted-foreground' size={20} />
+                <Mail
+                  className='text-muted-foreground'
+                  size={20}
+                  aria-label='email'
+                />
               </Link>
             </Button>
 
             <Button variant='outline' size='icon' asChild>
               <Link href='https://github.com/jongreen96' target='_blank'>
-                <Image src={github} alt='logo' width={19} height={19} />
+                <Image
+                  src={github}
+                  alt='logo'
+                  width={19}
+                  height={19}
+                  aria-label='github'
+                />
               </Link>
             </Button>
 
             <Button variant='outline' size='icon' asChild>
               <Link href='https://twitter.com/JonGreenDotDev' target='_blank'>
-                <Image src={x} alt='logo' width={19} height={19} />
+                <Image
+                  src={x}
+                  alt='logo'
+                  width={19}
+                  height={19}
+                  aria-label='twitter'
+                />
               </Link>
             </Button>
           </div>
