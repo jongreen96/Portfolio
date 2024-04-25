@@ -75,13 +75,12 @@ export default function Home() {
         <H2>About</H2>
 
         <P>
-          I am a full stack web engineer who is passionate about creating
-          user-friendly and performant web applications. I have honed my skills
-          primarily through self-learning on platforms like CodeCademy, and have
-          focused on technologies such as Next.js, React, Postgres, and
-          TailwindCSS. I enjoy continuously expanding my knowledge and exploring
-          new technologies, and I am always looking for opportunities to learn
-          and grow.
+          Passionate Full Stack Web Engineer dedicated to crafting user-friendly
+          and high-performing web applications. Proficient in technologies such
+          as Next.js, React, Postgres, and TailwindCSS, with a strong foundation
+          built through self-learning on platforms like CodeCademy. Continuously
+          expanding knowledge and exploring emerging technologies to drive
+          innovation and growth.
         </P>
       </section>
 
@@ -110,7 +109,7 @@ export default function Home() {
               <P>
                 My-GPT is a Next.js web application that allows users to access
                 all OpenAI Chat and Image Generation models without the need for
-                a montly subscription.
+                a monthly subscription.
               </P>
             </div>
           </div>
@@ -150,8 +149,9 @@ export default function Home() {
               </Link>
               <P>
                 Green Vinyl Graphics is a store that sells vector templates used
-                to wrap mobile devices, all products sold are created by me.
-                This website was a final project for my Web Development course.
+                to wrap mobile devices. Built to reduce overheads from selling
+                on another online marketplace. This website was a final project
+                for my Web Development course.
               </P>
             </div>
           </div>
