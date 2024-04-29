@@ -11,7 +11,6 @@ export default function Background() {
     vx: number;
     vy: number;
   }
-  // const dots: Dot[] = [];
   const dots: Dot[] = useMemo(() => [], []);
 
   useEffect(() => {
