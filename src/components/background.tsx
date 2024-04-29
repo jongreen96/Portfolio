@@ -19,9 +19,8 @@ export default function Background() {
 
       const x = Math.random() * canvas.current.width;
       const y = Math.random() * canvas.current.height;
-      // Decrease the maximum velocity values to slow down the dots
-      const vx = Math.random() * 0.5 - 0.25; // Adjust the range as needed
-      const vy = Math.random() * 0.5 - 0.25; // Adjust the range as needed
+      const vx = Math.random() * 0.5 - 0.25;
+      const vy = Math.random() * 0.5 - 0.25;
 
       dots.push({ x, y, vx, vy });
     };
