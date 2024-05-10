@@ -250,6 +250,7 @@ export default function Home() {
             <Badge variant='secondary'>PostgreSQL</Badge>
             <Badge variant='outline'>Git</Badge>
             <Badge variant='outline'>GitHub</Badge>
+            <Badge variant='outline'>Drizzle</Badge>
             <Badge variant='outline'>Prisma</Badge>
             <Badge variant='outline'>Redux</Badge>
             <Badge variant='outline'>Stripe</Badge>
