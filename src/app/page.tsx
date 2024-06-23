@@ -6,6 +6,7 @@ import H3 from '@/components/ui/h3';
 import P from '@/components/ui/p';
 import github from '@/lib/assets/github.png';
 import gvg from '@/lib/assets/greenvinylgraphics.png';
+import gvgNew from '@/lib/assets/greenvinylgraphicsnew.png';
 import mygpt from '@/lib/assets/my-gpt.png';
 import profilePhoto from '@/lib/assets/profile-photo.jpg';
 import recapit from '@/lib/assets/recapit.png';
@@ -110,6 +111,46 @@ export default function Home() {
         <div className='space-y-2'>
           <div className='flex gap-4'>
             <Link
+              href='https://greenvinylgraphics.com'
+              target='_blank'
+              className='shrink-0'
+            >
+              <Image
+                src={gvgNew}
+                alt='Green Vinyl Graphics website preview'
+                width={160}
+                height={160}
+                className='rounded h-full object-cover'
+              />
+            </Link>
+            <div>
+              <Link href='https://greenvinylgraphics.com' target='_blank'>
+                <H3>Green Vinyl Graphics</H3>
+              </Link>
+              <P>
+                Green Vinyl Graphics is a digital marketplace that sells vector
+                templates used to wrap mobile devices. Built to imporove
+                performace and UX over the origional site by utilising Next.js
+                SSR.
+              </P>
+            </div>
+          </div>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>Next.js</Badge>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>Tailwind CSS</Badge>
+            <Badge variant='outline'>Drizzle</Badge>
+            <Badge variant='outline'>Stripe</Badge>
+            <Badge variant='outline'>Shadcn/ui</Badge>
+            <Badge variant='outline'>Supabase</Badge>
+            <Badge variant='outline'>Resend</Badge>
+          </div>
+        </div>
+
+        <div className='space-y-2'>
+          <div className='flex gap-4'>
+            <Link
               href='https://my-gpt.app'
               target='_blank'
               className='shrink-0'
@@ -151,7 +192,7 @@ export default function Home() {
         <div className='space-y-2'>
           <div className='flex gap-4'>
             <Link
-              href='https://greenvinylgraphics.com/'
+              href='https://gvg.netlify.app/'
               target='_blank'
               className='shrink-0'
             >
@@ -164,8 +205,13 @@ export default function Home() {
               />
             </Link>
             <div>
-              <Link href='https://greenvinylgraphics.com/' target='_blank'>
-                <H3>Green Vinyl Graphics</H3>
+              <Link href='https://gvg.netlify.app/' target='_blank'>
+                <H3>
+                  Green Vinyl Graphics{' '}
+                  <span className='text-sm text-muted-foreground'>
+                    (depricated)
+                  </span>
+                </H3>
               </Link>
               <P>
                 Green Vinyl Graphics is a store that sells vector templates used
