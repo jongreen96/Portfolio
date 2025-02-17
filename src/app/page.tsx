@@ -91,15 +91,29 @@ export default function Home() {
           Full Stack Web Engineer dedicated to crafting user-friendly and
           high-performing web aplications. proficient in technologies such as
           Next.js, React, postgres, and TailwindCSS, with a strong foundation
-          built through self-learning on platforms like Codecademy and
-          Harvard&apos;s CS50. passionate about building efficient and scalable
-          solutions.
+          built through self-learning on platforms like{' '}
+          <a
+            href='https://www.codecademy.com/learn/paths/full-stack-engineer-career-path'
+            target='_blank'
+            className='underline'
+          >
+            Codecademy
+          </a>{' '}
+          and{' '}
+          <a
+            href='https://pll.harvard.edu/course/cs50-introduction-computer-science'
+            target='_blank'
+            className='underline'
+          >
+            Harvard&apos;s CS50x
+          </a>
+          . Passionate about building efficient and scalable solutions.
         </p>
       </section>
 
       <section className='space-y-10'>
         <h2 className='text-2xl font-semibold tracking-tight -mb-6'>
-          projects
+          Projects
         </h2>
 
         <div className='space-y-2'>
@@ -147,7 +161,7 @@ export default function Home() {
             <Link href='https://my-gpt.ap' target='_blank' className='shrink-0'>
               <Image
                 src='/my-gpt.png'
-                alt='My-GpT website preview'
+                alt='My-GPT website preview'
                 width={160}
                 height={160}
                 className='rounded h-full object-cover'
@@ -155,10 +169,10 @@ export default function Home() {
             </Link>
             <div>
               <Link href='https://my-gpt.ap' target='_blank'>
-                <h3 className='text-xl tracking-tight'>My-GpT</h3>
+                <h3 className='text-xl tracking-tight'>My-GPT</h3>
               </Link>
               <p className='text-muted-foreground text-sm text-pretty'>
-                My-GpT is a Next.js web aplication that allows users to access
+                My-GPT is a Next.js web aplication that allows users to access
                 all OpenAI Chat and Image Generation models without the need for
                 a monthly subscription.
               </p>
@@ -169,7 +183,7 @@ export default function Home() {
             <Badge variant='secondary'>React</Badge>
             <Badge variant='secondary'>JavaScript</Badge>
             <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='outline'>prisma</Badge>
+            <Badge variant='outline'>Prisma</Badge>
             <Badge variant='outline'>Stripe</Badge>
             <Badge variant='outline'>Clerk</Badge>
             <Badge variant='outline'>Shadcn/ui</Badge>
@@ -289,7 +303,7 @@ export default function Home() {
             <Badge variant='outline'>Git</Badge>
             <Badge variant='outline'>GitHub</Badge>
             <Badge variant='outline'>Drizzle</Badge>
-            <Badge variant='outline'>prisma</Badge>
+            <Badge variant='outline'>Prisma</Badge>
             <Badge variant='outline'>Redux</Badge>
             <Badge variant='outline'>Stripe</Badge>
             <Badge variant='outline'>Clerk</Badge>
