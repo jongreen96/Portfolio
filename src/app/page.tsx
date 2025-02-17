@@ -27,7 +27,7 @@ export default function Home() {
 
           <div className='pt-2 space-x-2'>
             <Button variant='outline' size='icon' asChild>
-              <Link href='tel: +44 7769674943' target='_blank'>
+              <Link href='tel:+44 7769674943' target='_blank'>
                 <Phone
                   className='text-muted-foreground'
                   size={20}
@@ -89,8 +89,8 @@ export default function Home() {
 
         <p className='text-muted-foreground text-sm text-pretty'>
           Full Stack Web Engineer dedicated to crafting user-friendly and
-          high-performing web aplications. proficient in technologies such as
-          Next.js, React, postgres, and TailwindCSS, with a strong foundation
+          high-performing web applications. Proficient in technologies such as
+          Next.js, React, Postgres, and TailwindCSS, with a strong foundation
           built through self-learning on platforms like Codecademy and
           Harvard&apos;s CS50x. Passionate about building efficient and scalable
           solutions.
@@ -141,7 +141,6 @@ export default function Home() {
             <Badge variant='outline'>Shadcn/ui</Badge>
             <Badge variant='outline'>OpenAI API</Badge>
             <Badge variant='outline'>Postgres DB</Badge>
-            <Badge variant='outline'>OpenAI API</Badge>
           </div>
         </div>
 
@@ -189,7 +188,7 @@ export default function Home() {
         <div className='space-y-2'>
           <div className='flex gap-4'>
             <Link
-              href='https://recapit-reddit.netlify.ap/'
+              href='https://recapit-reddit.netlify.app/'
               target='_blank'
               className='shrink-0'
             >
