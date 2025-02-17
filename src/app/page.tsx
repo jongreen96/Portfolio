@@ -84,8 +84,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-3'>
-        <h2 className='text-2xl font-semibold tracking-tight'>About</h2>
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>About</h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
           Full Stack Web Engineer dedicated to crafting user-friendly and
@@ -97,136 +97,152 @@ export default function Home() {
         </p>
       </section>
 
-      <section className='space-y-3'>
-        <h2 className='text-2xl font-semibold tracking-tight'>Projects</h2>
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>Projects</h2>
 
-        <div className='space-y-2'>
-          <div className='flex gap-4'>
-            <Link
-              href='https://my-gpt.app'
-              target='_blank'
-              className='shrink-0'
-            >
-              <Image
-                src='/my-gpt.png'
-                alt='My-GPT website preview'
-                width={160}
-                height={160}
-                className='rounded'
-              />
-            </Link>
-            <div>
-              <Link href='https://my-gpt.app' target='_blank'>
-                <h3 className='text-xl tracking-tight'>My-GPT</h3>
+        <div className='space-y-6'>
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <Link
+                href='https://my-gpt.app'
+                target='_blank'
+                className='shrink-0'
+              >
+                <Image
+                  src='/my-gpt.png'
+                  alt='My-GPT website preview'
+                  width={160}
+                  height={160}
+                  className='rounded'
+                />
               </Link>
-              <p className='text-muted-foreground text-sm text-pretty'>
-                My-GPT is a Next.js web application that provides users with
-                on-demand access to OpenAI&apos;s Chat and Image Generation
-                models. Users can engage in powerful text generation, coding
-                assistance, and deep AI analysis, as well as create stunning
-                AI-generated images, all on a pay-as-you-go basis. The platform
-                ensures seamless synchronization across devices, allowing users
-                to continue their work anywhere.
-              </p>
+              <div>
+                <Link
+                  href='https://my-gpt.app'
+                  target='_blank'
+                  className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                >
+                  <h3 className='text-xl tracking-tight'>My-GPT</h3>
+                </Link>
+                <p className='text-muted-foreground text-sm text-pretty'>
+                  My-GPT is a Next.js web application that provides users with
+                  on-demand access to OpenAI&apos;s Chat and Image Generation
+                  models. Users can engage in powerful text generation, coding
+                  assistance, and deep AI analysis, as well as create stunning
+                  AI-generated images, all on a pay-as-you-go basis. The
+                  platform ensures seamless synchronization across devices,
+                  allowing users to continue their work anywhere.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>Next.js</Badge>
+              <Badge variant='secondary'>React</Badge>
+              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>Tailwind CSS</Badge>
+              <Badge variant='outline'>Prisma</Badge>
+              <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>AuthJS</Badge>
+              <Badge variant='outline'>Shadcn/ui</Badge>
+              <Badge variant='outline'>OpenAI API</Badge>
+              <Badge variant='outline'>Postgres DB</Badge>
             </div>
           </div>
-          <div className='flex flex-wrap gap-1'>
-            <Badge variant='secondary'>Next.js</Badge>
-            <Badge variant='secondary'>React</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='outline'>Prisma</Badge>
-            <Badge variant='outline'>Stripe</Badge>
-            <Badge variant='outline'>AuthJS</Badge>
-            <Badge variant='outline'>Shadcn/ui</Badge>
-            <Badge variant='outline'>OpenAI API</Badge>
-            <Badge variant='outline'>Postgres DB</Badge>
-          </div>
-        </div>
 
-        <div className='space-y-2'>
-          <div className='flex gap-4'>
-            <Link
-              href='https://greenvinylgraphics.com'
-              target='_blank'
-              className='shrink-0'
-            >
-              <Image
-                src='/greenvinylgraphics.png'
-                alt='Green Vinyl Graphics website preview'
-                width={160}
-                height={160}
-                className='rounded'
-              />
-            </Link>
-            <div>
-              <Link href='https://greenvinylgraphics.com' target='_blank'>
-                <h3 className='text-xl tracking-tight'>Green Vinyl Graphics</h3>
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <Link
+                href='https://greenvinylgraphics.com'
+                target='_blank'
+                className='shrink-0'
+              >
+                <Image
+                  src='/greenvinylgraphics.png'
+                  alt='Green Vinyl Graphics website preview'
+                  width={160}
+                  height={160}
+                  className='rounded'
+                />
               </Link>
-              <p className='text-muted-foreground text-sm text-pretty'>
-                Green Vinyl Graphics is a digital marketplace offering
-                precision-designed vector templates for wrapping mobile devices.
-                The platform was redeveloped using Next.js with server-side
-                rendering (SSR) to enhance performance and user experience over
-                the original site.
-              </p>
+              <div>
+                <Link
+                  href='https://greenvinylgraphics.com'
+                  target='_blank'
+                  className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                >
+                  <h3 className='text-xl tracking-tight'>
+                    Green Vinyl Graphics
+                  </h3>
+                </Link>
+                <p className='text-muted-foreground text-sm text-pretty'>
+                  Green Vinyl Graphics is a digital marketplace offering
+                  precision-designed vector templates for wrapping mobile
+                  devices. The platform was redeveloped using Next.js with
+                  server-side rendering (SSR) to enhance performance and user
+                  experience over the original site.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>Next.js</Badge>
+              <Badge variant='secondary'>React</Badge>
+              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>Tailwind CSS</Badge>
+              <Badge variant='outline'>Drizzle</Badge>
+              <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>Shadcn/ui</Badge>
+              <Badge variant='outline'>Supabase</Badge>
+              <Badge variant='outline'>Resend</Badge>
             </div>
           </div>
-          <div className='flex flex-wrap gap-1'>
-            <Badge variant='secondary'>Next.js</Badge>
-            <Badge variant='secondary'>React</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='outline'>Drizzle</Badge>
-            <Badge variant='outline'>Stripe</Badge>
-            <Badge variant='outline'>Shadcn/ui</Badge>
-            <Badge variant='outline'>Supabase</Badge>
-            <Badge variant='outline'>Resend</Badge>
-          </div>
-        </div>
 
-        <div className='space-y-2'>
-          <div className='flex gap-4'>
-            <Link
-              href='https://recapit-reddit.netlify.app/'
-              target='_blank'
-              className='shrink-0'
-            >
-              <Image
-                src='/recapit.png'
-                alt='Recapit Website preview'
-                width={160}
-                height={160}
-                className='rounded'
-              />
-            </Link>
-            <div>
-              <Link href='https://recapit-reddit.netlify.ap/' target='_blank'>
-                <h3 className='text-xl tracking-tight'>Recapit</h3>
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <Link
+                href='https://recapit-reddit.netlify.app'
+                target='_blank'
+                className='shrink-0'
+              >
+                <Image
+                  src='/recapit.png'
+                  alt='Recapit Website preview'
+                  width={160}
+                  height={160}
+                  className='rounded'
+                />
               </Link>
-              <p className='text-muted-foreground text-sm text-pretty'>
-                Recapit is a straightforward Reddit clone that retrieves the top
-                posts from specified subreddits over a chosen time frame.
-                Developed early in my coding journey, it served as my inaugural
-                web development project. Notably, Recapit was developed before
-                the recent changes to the Reddit API, which means some features
-                might not work as intended.
-              </p>
+              <div>
+                <Link
+                  href='https://recapit-reddit.netlify.app'
+                  target='_blank'
+                  className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                >
+                  <h3 className='text-xl tracking-tight'>Recapit</h3>
+                </Link>
+                <p className='text-muted-foreground text-sm text-pretty'>
+                  Recapit is a straightforward Reddit clone that retrieves the
+                  top posts from specified subreddits over a chosen time frame.
+                  Developed early in my coding journey, it served as my
+                  inaugural web development project. Notably, Recapit was
+                  developed before the recent changes to the Reddit API, which
+                  means some features might not work as intended.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className='flex flex-wrap gap-1'>
-            <Badge variant='secondary'>React</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='outline'>Redux</Badge>
-            <Badge variant='outline'>Stripe</Badge>
-            <Badge variant='outline'>Netlify</Badge>
-            <Badge variant='outline'>Reddit API</Badge>
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>React</Badge>
+              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='outline'>Redux</Badge>
+              <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>Netlify</Badge>
+              <Badge variant='outline'>Reddit API</Badge>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className='space-y-3'>
-        <h2 className='text-2xl font-semibold tracking-tight'>Skills</h2>
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>Skills</h2>
         <div className='space-y-2'>
           <p className='text-muted-foreground text-sm text-pretty'>
             I specialize in high-performance web applications using Next.js,
@@ -268,44 +284,48 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-3'>
-        <h2 className='text-2xl font-semibold tracking-tight'>Education</h2>
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>
+          Education
+        </h2>
 
-        <div>
-          <span className='flex gap-4 items-baseline'>
-            <a
-              href='https://pll.harvard.edu/course/cs50-introduction-computer-science'
-              target='_blank'
-            >
-              <h3 className='text-xl tracking-tight'>Harvard&apos;s CS50x</h3>
-            </a>
-            <p className='text-muted-foreground text-sm text-pretty'>2024</p>
-          </span>
-
-          <p className='text-muted-foreground text-sm text-pretty'>
-            Completed Harvard&apos;s renowned CS50x course, gaining a deep
-            understanding of computer science fundamentals, algorithms, and
-            programming. This rigorous learning experience further refined my
-            problem-solving skills and broadened my technical proficiency.
-          </p>
-        </div>
-
-        <div className='space-y-3'>
+        <div className='space-y-6'>
           <div>
             <span className='flex gap-4 items-baseline'>
-              <a
+              <Link
+                href='https://pll.harvard.edu/course/cs50-introduction-computer-science'
+                target='_blank'
+                className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+              >
+                <h3 className='text-xl tracking-tight'>Harvard&apos;s CS50x</h3>
+              </Link>
+              <p className='text-muted-foreground text-sm text-pretty'>2024</p>
+            </span>
+
+            <p className='text-muted-foreground text-sm text-pretty'>
+              Completed Harvard&apos;s renowned CS50x course, gaining a deep
+              understanding of computer science fundamentals, algorithms, and
+              programming. This rigorous learning experience further refined my
+              problem-solving skills and broadened my technical proficiency.
+            </p>
+          </div>
+
+          <div>
+            <span className='flex gap-4 items-baseline'>
+              <Link
                 href='https://www.codecademy.com/learn/paths/full-stack-engineer-career-path'
                 target='_blank'
+                className='underline underline-offset-2 decoration-1 hover:text-blue-300'
               >
                 <h3 className='text-xl tracking-tight'>CodeCademy</h3>
-              </a>
+              </Link>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2023 - 2024
               </p>
             </span>
 
             <p className='text-muted-foreground text-sm text-pretty'>
-              I completed the Full Stack Web Developer Bootcamp, mastering
+              Completed the Full Stack Web Developer Bootcamp, mastering
               essential web development fundamentals with hands-on experience in
               React, Node.js, and SQL. This immersive program provided a strong
               foundation for building modern, scalable applications.
@@ -314,11 +334,15 @@ export default function Home() {
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <a href='https://www.dearne-coll.ac.uk/' target='_blank'>
+              <Link
+                href='https://www.dearne-coll.ac.uk/'
+                target='_blank'
+                className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+              >
                 <h3 className='text-xl tracking-tight'>
                   Dearne Valley College
                 </h3>
-              </a>
+              </Link>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2012 - 2013
               </p>
@@ -333,9 +357,13 @@ export default function Home() {
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <a href='https://www.wingfieldacademy.org/' target='_blank'>
+              <Link
+                href='https://www.wingfieldacademy.org/'
+                target='_blank'
+                className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+              >
                 <h3 className='text-xl tracking-tight'>Wingfield Academy</h3>
-              </a>
+              </Link>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2007 - 2012
               </p>
