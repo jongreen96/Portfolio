@@ -84,8 +84,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-10'>
-        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>About</h2>
+      <section className='space-y-3'>
+        <h2 className='text-2xl font-semibold tracking-tight'>About</h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
           Full Stack Web Engineer dedicated to crafting user-friendly and
@@ -97,10 +97,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section className='space-y-10'>
-        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>
-          Projects
-        </h2>
+      <section className='space-y-3'>
+        <h2 className='text-2xl font-semibold tracking-tight'>Projects</h2>
 
         <div className='space-y-2'>
           <div className='flex gap-4'>
@@ -228,8 +226,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-10'>
-        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>Skills</h2>
+      <section className='space-y-3'>
+        <h2 className='text-2xl font-semibold tracking-tight'>Skills</h2>
         <div className='space-y-2'>
           <p className='text-muted-foreground text-sm text-pretty'>
             I specialize in high-performance web applications using Next.js,
@@ -271,10 +269,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='space-y-10'>
-        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>
-          Education
-        </h2>
+      <section className='space-y-3'>
+        <h2 className='text-2xl font-semibold tracking-tight'>Education</h2>
 
         <div>
           <span className='flex gap-4 items-baseline'>
@@ -295,7 +291,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className='space-y-10'>
+        <div className='space-y-3'>
           <div>
             <span className='flex gap-4 items-baseline'>
               <a
