@@ -96,12 +96,12 @@ export default function Home() {
         <H2>About</H2>
 
         <P>
-          Passionate Full Stack Web Engineer dedicated to crafting user-friendly
-          and high-performing web applications. Proficient in technologies such
-          as Next.js, React, Postgres, and TailwindCSS, with a strong foundation
-          built through self-learning on platforms like CodeCademy. Continuously
-          expanding knowledge and exploring emerging technologies to drive
-          innovation and growth.
+          Full Stack Web Engineer dedicated to crafting user-friendly and
+          high-performing web applications. Proficient in technologies such as
+          Next.js, React, Postgres, and TailwindCSS, with a strong foundation
+          built through self-learning on platforms like Codecademy and
+          Harvard&apos;s CS50. Passionate about building efficient and scalable
+          solutions.
         </P>
       </section>
 
@@ -321,7 +321,7 @@ export default function Home() {
           <div>
             <span className='flex gap-4 items-baseline'>
               <H3>CodeCademy</H3>
-              <P>2022 - 2023</P>
+              <P>2023 - 2024</P>
             </span>
 
             <P>
