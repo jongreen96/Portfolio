@@ -1,9 +1,5 @@
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import H1 from '@/components/ui/h1';
-import H2 from '@/components/ui/h2';
-import H3 from '@/components/ui/h3';
-import P from '@/components/ui/p';
 
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
@@ -15,15 +11,17 @@ export default function Home() {
       <section className='flex justify-between'>
         <div className='text-lg space-y-2'>
           <div>
-            <H1>Jon Green</H1>
-            <p className='mt-1 tracking-tight'>Full Stack Web Engineer</p>
+            <h1 className='text-4xl font-bold tracking-tighter'>Jon Green</h1>
+            <p className='mt-1 text-xl tracking-tight'>
+              Full Stack Web Engineer
+            </p>
             <Link
               href='https://www.google.com/maps/place/Sheffield'
               target='_blank'
               className='flex text-muted-foreground w-fit hover:underline'
             >
               <MapPin className='size-3 my-auto mr-1' />
-              <p className='text-xs '>Sheffield, England</p>
+              <p className='text-sm '>Sheffield, England</p>
             </Link>
           </div>
 
@@ -87,20 +85,22 @@ export default function Home() {
       </section>
 
       <section className='space-y-10'>
-        <H2>About</H2>
+        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>About</h2>
 
-        <P>
+        <p className='text-muted-foreground text-sm text-pretty'>
           Full Stack Web Engineer dedicated to crafting user-friendly and
-          high-performing web applications. Proficient in technologies such as
-          Next.js, React, Postgres, and TailwindCSS, with a strong foundation
+          high-performing web aplications. proficient in technologies such as
+          Next.js, React, postgres, and TailwindCSS, with a strong foundation
           built through self-learning on platforms like Codecademy and
-          Harvard&apos;s CS50. Passionate about building efficient and scalable
+          Harvard&apos;s CS50. passionate about building efficient and scalable
           solutions.
-        </P>
+        </p>
       </section>
 
       <section className='space-y-10'>
-        <H2>Projects</H2>
+        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>
+          projects
+        </h2>
 
         <div className='space-y-2'>
           <div className='flex gap-4'>
@@ -119,14 +119,14 @@ export default function Home() {
             </Link>
             <div>
               <Link href='https://greenvinylgraphics.com' target='_blank'>
-                <H3>Green Vinyl Graphics</H3>
+                <h3 className='text-xl tracking-tight'>Green Vinyl Graphics</h3>
               </Link>
-              <P>
+              <p className='text-muted-foreground text-sm text-pretty'>
                 Green Vinyl Graphics is a digital marketplace that sells vector
                 templates used to wrap mobile devices. Built to imporove
                 performace and UX over the origional site by utilising Next.js
                 SSR.
-              </P>
+              </p>
             </div>
           </div>
           <div className='flex flex-wrap gap-1'>
@@ -144,28 +144,24 @@ export default function Home() {
 
         <div className='space-y-2'>
           <div className='flex gap-4'>
-            <Link
-              href='https://my-gpt.app'
-              target='_blank'
-              className='shrink-0'
-            >
+            <Link href='https://my-gpt.ap' target='_blank' className='shrink-0'>
               <Image
                 src='/my-gpt.png'
-                alt='My-GPT website preview'
+                alt='My-GpT website preview'
                 width={160}
                 height={160}
                 className='rounded h-full object-cover'
               />
             </Link>
             <div>
-              <Link href='https://my-gpt.app' target='_blank'>
-                <H3>My-GPT</H3>
+              <Link href='https://my-gpt.ap' target='_blank'>
+                <h3 className='text-xl tracking-tight'>My-GpT</h3>
               </Link>
-              <P>
-                My-GPT is a Next.js web application that allows users to access
+              <p className='text-muted-foreground text-sm text-pretty'>
+                My-GpT is a Next.js web aplication that allows users to access
                 all OpenAI Chat and Image Generation models without the need for
                 a monthly subscription.
-              </P>
+              </p>
             </div>
           </div>
           <div className='flex flex-wrap gap-1'>
@@ -173,20 +169,20 @@ export default function Home() {
             <Badge variant='secondary'>React</Badge>
             <Badge variant='secondary'>JavaScript</Badge>
             <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='outline'>Prisma</Badge>
+            <Badge variant='outline'>prisma</Badge>
             <Badge variant='outline'>Stripe</Badge>
             <Badge variant='outline'>Clerk</Badge>
             <Badge variant='outline'>Shadcn/ui</Badge>
-            <Badge variant='outline'>OpenAI API</Badge>
+            <Badge variant='outline'>OpenAI ApI</Badge>
             <Badge variant='outline'>Supabase</Badge>
-            <Badge variant='outline'>OpenAI API</Badge>
+            <Badge variant='outline'>OpenAI ApI</Badge>
           </div>
         </div>
 
         <div className='space-y-2'>
           <div className='flex gap-4'>
             <Link
-              href='https://gvg.netlify.app/'
+              href='https://gvg.netlify.ap/'
               target='_blank'
               className='shrink-0'
             >
@@ -199,27 +195,27 @@ export default function Home() {
               />
             </Link>
             <div>
-              <Link href='https://gvg.netlify.app/' target='_blank'>
-                <H3>
+              <Link href='https://gvg.netlify.ap/' target='_blank'>
+                <h3 className='text-xl tracking-tight'>
                   Green Vinyl Graphics{' '}
                   <span className='text-sm text-muted-foreground'>
                     (depricated)
                   </span>
-                </H3>
+                </h3>
               </Link>
-              <P>
+              <p className='text-muted-foreground text-sm text-pretty'>
                 Green Vinyl Graphics is a store that sells vector templates used
                 to wrap mobile devices. Built to reduce overheads from selling
                 on another online marketplace. This website was a final project
                 for my Web Development course.
-              </P>
+              </p>
             </div>
           </div>
           <div className='flex flex-wrap gap-1'>
             <Badge variant='secondary'>React</Badge>
             <Badge variant='secondary'>Express.js</Badge>
             <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='secondary'>postgreSQL</Badge>
             <Badge variant='outline'>Redux</Badge>
             <Badge variant='outline'>Axios</Badge>
             <Badge variant='outline'>Stripe</Badge>
@@ -232,28 +228,28 @@ export default function Home() {
         <div className='space-y-2'>
           <div className='flex gap-4'>
             <Link
-              href='https://recapit-reddit.netlify.app/'
+              href='https://recapit-reddit.netlify.ap/'
               target='_blank'
               className='shrink-0'
             >
               <Image
                 src='/recapit.png'
-                alt='Recapit Website Preview'
+                alt='Recapit Website preview'
                 width={160}
                 height={160}
                 className='rounded h-full object-cover'
               />
             </Link>
             <div>
-              <Link href='https://recapit-reddit.netlify.app/' target='_blank'>
-                <H3>Recapit</H3>
+              <Link href='https://recapit-reddit.netlify.ap/' target='_blank'>
+                <h3 className='text-xl tracking-tight'>Recapit</h3>
               </Link>
-              <P>
+              <p className='text-muted-foreground text-sm text-pretty'>
                 Recapit is a simple Reddit clone that pulls the top posts from a
                 given subreddit for a set time period. This was the first
                 website I created on my coding journey. (Built before the Reddit
-                API changes)
-              </P>
+                ApI changes)
+              </p>
             </div>
           </div>
           <div className='flex flex-wrap gap-1'>
@@ -262,25 +258,25 @@ export default function Home() {
             <Badge variant='outline'>Redux</Badge>
             <Badge variant='outline'>Stripe</Badge>
             <Badge variant='outline'>Netlify</Badge>
-            <Badge variant='outline'>Reddit API</Badge>
+            <Badge variant='outline'>Reddit ApI</Badge>
           </div>
         </div>
       </section>
 
       <section className='space-y-10'>
-        <H2>Skills</H2>
+        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>Skills</h2>
         <div className='space-y-2'>
-          <P>
-            Currently I work mostly with Next.js, React, Node.js and PostgreSQL.
+          <p className='text-muted-foreground text-sm text-pretty'>
+            Currently I work mostly with Next.js, React, Node.js and postgreSQL.
             I am always looking to learn new technologies and frameworks and in
             the past I have used:
-          </P>
+          </p>
 
           <div className='flex flex-wrap gap-1'>
             <Badge variant='secondary'>HTML</Badge>
             <Badge variant='secondary'>CSS</Badge>
             <Badge variant='secondary'>C</Badge>
-            <Badge variant='secondary'>Python</Badge>
+            <Badge variant='secondary'>python</Badge>
             <Badge variant='secondary'>Next.js</Badge>
             <Badge variant='secondary'>Node.js</Badge>
             <Badge variant='secondary'>Express.js</Badge>
@@ -289,11 +285,11 @@ export default function Home() {
             <Badge variant='secondary'>TypeScript</Badge>
             <Badge variant='secondary'>Tailwind CSS</Badge>
             <Badge variant='secondary'>SQL</Badge>
-            <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='secondary'>postgreSQL</Badge>
             <Badge variant='outline'>Git</Badge>
             <Badge variant='outline'>GitHub</Badge>
             <Badge variant='outline'>Drizzle</Badge>
-            <Badge variant='outline'>Prisma</Badge>
+            <Badge variant='outline'>prisma</Badge>
             <Badge variant='outline'>Redux</Badge>
             <Badge variant='outline'>Stripe</Badge>
             <Badge variant='outline'>Clerk</Badge>
@@ -309,46 +305,52 @@ export default function Home() {
       </section>
 
       <section className='space-y-10'>
-        <H2>Education</H2>
+        <h2 className='text-2xl font-semibold tracking-tight -mb-6'>
+          Education
+        </h2>
 
         <div className='space-y-10'>
           <div>
             <span className='flex gap-4 items-baseline'>
-              <H3>CodeCademy</H3>
-              <P>2023 - 2024</P>
+              <h3 className='text-xl tracking-tight'>CodeCademy</h3>
+              <p>2023 - 2024</p>
             </span>
 
-            <P>
+            <p className='text-muted-foreground text-sm text-pretty'>
               I completed the CodeCademy Full Stack Web Developer Bootcamp. I
               learned the fundamentals of web development and gained experience
               working with React, Node.js, and SQL.
-            </P>
+            </p>
           </div>
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <H3>Dearne Valley College</H3>
-              <P>2012 - 2013</P>
+              <h3 className='text-xl tracking-tight'>Dearne Valley College</h3>
+              <p className='text-muted-foreground text-sm text-pretty'>
+                2012 - 2013
+              </p>
             </span>
 
-            <P>
+            <p className='text-muted-foreground text-sm text-pretty'>
               I attended Dearne Valley College where I completed a level 3
               Diploma in IT, with a focus on Web Development and database
               design.
-            </P>
+            </p>
           </div>
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <H3>Wingfield Academy</H3>
-              <P>2007 - 2012</P>
+              <h3 className='text-xl tracking-tight'>Wingfield Academy</h3>
+              <p className='text-muted-foreground text-sm text-pretty'>
+                2007 - 2012
+              </p>
             </span>
 
-            <P>
+            <p className='text-muted-foreground text-sm text-pretty'>
               I attended Wingfield Academy where I received over 5 A*-C level 2
               certificates including a distinction in webpage creation and
               computer graphics.
-            </P>
+            </p>
           </div>
         </div>
       </section>
