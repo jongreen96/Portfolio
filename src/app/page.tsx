@@ -4,13 +4,7 @@ import H1 from '@/components/ui/h1';
 import H2 from '@/components/ui/h2';
 import H3 from '@/components/ui/h3';
 import P from '@/components/ui/p';
-import github from '@/lib/assets/github.png';
-import gvg from '@/lib/assets/greenvinylgraphics.png';
-import gvgNew from '@/lib/assets/greenvinylgraphicsnew.png';
-import mygpt from '@/lib/assets/my-gpt.png';
-import profilePhoto from '@/lib/assets/profile-photo.jpg';
-import recapit from '@/lib/assets/recapit.png';
-import x from '@/lib/assets/x.png';
+
 import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -57,7 +51,7 @@ export default function Home() {
             <Button variant='outline' size='icon' asChild>
               <Link href='https://github.com/jongreen96' target='_blank'>
                 <Image
-                  src={github}
+                  src='/github.png'
                   alt='logo'
                   width={19}
                   height={19}
@@ -69,7 +63,7 @@ export default function Home() {
             <Button variant='outline' size='icon' asChild>
               <Link href='https://twitter.com/JonGreenDotDev' target='_blank'>
                 <Image
-                  src={x}
+                  src='/x.png'
                   alt='logo'
                   width={19}
                   height={19}
@@ -82,7 +76,7 @@ export default function Home() {
 
         <div>
           <Image
-            src={profilePhoto}
+            src='/profile-photo.jpg'
             alt='me'
             width={160}
             height={160}
@@ -116,7 +110,7 @@ export default function Home() {
               className='shrink-0'
             >
               <Image
-                src={gvgNew}
+                src='/greenvinylgraphicsnew.png'
                 alt='Green Vinyl Graphics website preview'
                 width={160}
                 height={160}
@@ -156,7 +150,7 @@ export default function Home() {
               className='shrink-0'
             >
               <Image
-                src={mygpt}
+                src='/my-gpt.png'
                 alt='My-GPT website preview'
                 width={160}
                 height={160}
@@ -197,7 +191,7 @@ export default function Home() {
               className='shrink-0'
             >
               <Image
-                src={gvg}
+                src='/greenvinylgraphics.png'
                 alt='Green Vinyl Graphics website preview'
                 width={160}
                 height={160}
@@ -243,7 +237,7 @@ export default function Home() {
               className='shrink-0'
             >
               <Image
-                src={recapit}
+                src='/recapit.png'
                 alt='Recapit Website Preview'
                 width={160}
                 height={160}
