@@ -19,8 +19,8 @@ export default function Background() {
 
       const x = Math.random() * canvas.current.width;
       const y = Math.random() * canvas.current.height;
-      const vx = Math.random() * 0.5 - 0.25;
-      const vy = Math.random() * 0.5 - 0.25;
+      const vx = Math.random() * 0.3 - 0.15;
+      const vy = Math.random() * 0.3 - 0.15;
 
       dots.push({ x, y, vx, vy });
     };
@@ -48,11 +48,11 @@ export default function Background() {
         const distance = Math.sqrt(dx * dx + dy * dy);
         if (distance < 100) {
           const force = (100 - distance) / 100;
-          dot.vx -= dx * force * 0.01;
-          dot.vy -= dy * force * 0.01;
+          dot.vx -= dx * force * 0.005;
+          dot.vy -= dy * force * 0.005;
         }
-        if (dot.vx > 1.5) dot.vx = dot.vx * 0.9;
-        if (dot.vy > 1.5) dot.vy = dot.vy * 0.9;
+        if (dot.vx > 1) dot.vx = dot.vx * 0.9;
+        if (dot.vy > 1) dot.vy = dot.vy * 0.9;
         dot.x += dot.vx;
         dot.y += dot.vy;
         if (dot.x < 0 || dot.x > canvas.current.width) dot.vx = -dot.vx;
@@ -83,7 +83,7 @@ export default function Background() {
     };
 
     setInterval(updateDots, 1000 / 60);
-  }, []);
+  }, [dots]);
 
   return (
     <div className='absolute inset-0 -z-10'>
