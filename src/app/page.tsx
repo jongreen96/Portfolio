@@ -323,17 +323,17 @@ export default function Home() {
           <div className='flex flex-wrap gap-1'>
             <Badge variant='secondary'>HTML</Badge>
             <Badge variant='secondary'>CSS</Badge>
-            <Badge variant='secondary'>C</Badge>
-            <Badge variant='secondary'>Python</Badge>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>TypeScript</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
             <Badge variant='secondary'>Next.js</Badge>
             <Badge variant='secondary'>Node.js</Badge>
             <Badge variant='secondary'>Express.js</Badge>
-            <Badge variant='secondary'>React</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='secondary'>TypeScript</Badge>
             <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='secondary'>SQL</Badge>
             <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='secondary'>SQL</Badge>
+            <Badge variant='outline'>C</Badge>
+            <Badge variant='outline'>Python</Badge>
             <Badge variant='outline'>Git</Badge>
             <Badge variant='outline'>GitHub</Badge>
             <Badge variant='outline'>Drizzle</Badge>
@@ -346,8 +346,6 @@ export default function Home() {
             <Badge variant='outline'>Netlify</Badge>
             <Badge variant='outline'>Bcrypt</Badge>
             <Badge variant='outline'>Data Structures & Algorithms</Badge>
-            <Badge variant='outline'>YAML</Badge>
-            <Badge variant='outline'>Swagger</Badge>
           </div>
         </div>
       </section>
