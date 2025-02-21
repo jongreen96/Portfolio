@@ -13,7 +13,7 @@ export default function Home() {
           <div>
             <h1 className='text-4xl font-bold tracking-tighter'>Jon Green</h1>
             <p className='mt-1 text-xl tracking-tight'>
-              Full Stack Web Engineer
+              Full Stack Web Developer
             </p>
             <Link
               href='https://www.google.com/maps/place/Sheffield'
@@ -90,7 +90,7 @@ export default function Home() {
         </h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
-          Full Stack Web Engineer dedicated to crafting user-friendly and
+          Full stack web developer dedicated to crafting user-friendly and
           high-performing web applications. Proficient in technologies such as
           Next.js, React, Postgres, and TailwindCSS, with a strong foundation
           built through self-learning on platforms like Codecademy and
