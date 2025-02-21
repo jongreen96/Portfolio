@@ -85,7 +85,9 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className='text-2xl font-semibold tracking-tight pb-4'>About</h2>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>
+          Objective
+        </h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
           Full Stack Web Engineer dedicated to crafting user-friendly and
@@ -443,6 +445,24 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>About Me</h2>
+
+        <p className='text-muted-foreground text-sm text-pretty'>
+          I have always been passionate about technology, as reflected in my
+          early studies in IT. However, after college, I pursued a more
+          immediate source of income by working in retail while running my own
+          business in sign writing and vector template design. Over the years,
+          my love for web development continued to grow, leading me to formally
+          transition into the field. I am now actively seeking my first role in
+          the industry, eager to work alongside experienced professionals,
+          refine my skills, and contribute to meaningful projects. Long-term
+          career stability is important to me, and I look forward to being part
+          of a team where I can grow, collaborate, and continuously improve my
+          expertise.
+        </p>
       </section>
     </main>
   );
