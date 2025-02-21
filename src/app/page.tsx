@@ -185,9 +185,9 @@ export default function Home() {
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
-                  Event Capture lets users capture every moment of their event
-                  from multiple perspectives. With easy QR code sharing, guests
-                  can upload photos, which are organized in an intuitive
+                  Event Capture lets users capture lossless images of their
+                  event from multiple perspectives. With easy QR code sharing,
+                  guests can upload photos, which are organized in an intuitive
                   dashboard. Designed for simplicity and security, it ensures
                   memories are preserved and accessible for any event size.
                 </p>
