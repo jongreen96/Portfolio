@@ -158,6 +158,56 @@ export default function Home() {
           <div className='space-y-2'>
             <div className='flex gap-4'>
               <Link
+                href='https://event-capture.jongreen.dev/'
+                target='_blank'
+                className='shrink-0'
+              >
+                <Image
+                  src='/event-capture.png'
+                  alt='Event Capture website preview'
+                  width={160}
+                  height={160}
+                  className='rounded border-1'
+                />
+              </Link>
+              <div>
+                <div className='flex items-center'>
+                  <Link
+                    href='https://event-capture.jongreen.dev/'
+                    target='_blank'
+                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                  >
+                    <h3 className='text-xl tracking-tight'>Event Capture</h3>
+                  </Link>
+                  <span className='text-amber-500 text-xl ml-2 select-none'>
+                    •
+                  </span>
+                </div>
+
+                <p className='text-muted-foreground text-sm text-pretty'>
+                  Event Capture lets users capture every moment of their event
+                  from multiple perspectives. With easy QR code sharing, guests
+                  can upload photos, which are organized in an intuitive
+                  dashboard. Designed for simplicity and security, it ensures
+                  memories are preserved and accessible for any event size.
+                </p>
+              </div>
+            </div>
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>Next.js</Badge>
+              <Badge variant='secondary'>React</Badge>
+              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>Tailwind CSS</Badge>
+              <Badge variant='outline'>Cloudflare R2</Badge>
+              <Badge variant='outline'>Drizzle</Badge>
+              <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>Shadcn/ui</Badge>
+            </div>
+          </div>
+
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <Link
                 href='https://greenvinylgraphics.com'
                 target='_blank'
                 className='shrink-0'
@@ -205,56 +255,6 @@ export default function Home() {
               <Badge variant='outline'>Shadcn/ui</Badge>
               <Badge variant='outline'>Supabase</Badge>
               <Badge variant='outline'>Resend</Badge>
-            </div>
-          </div>
-
-          <div className='space-y-2'>
-            <div className='flex gap-4'>
-              <Link
-                href='https://event-capture.jongreen.dev/'
-                target='_blank'
-                className='shrink-0'
-              >
-                <Image
-                  src='/event-capture.png'
-                  alt='Event Capture website preview'
-                  width={160}
-                  height={160}
-                  className='rounded border-1'
-                />
-              </Link>
-              <div>
-                <div className='flex items-center'>
-                  <Link
-                    href='https://event-capture.jongreen.dev/'
-                    target='_blank'
-                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
-                  >
-                    <h3 className='text-xl tracking-tight'>Event Capture</h3>
-                  </Link>
-                  <span className='text-amber-500 text-xl ml-2 select-none'>
-                    •
-                  </span>
-                </div>
-
-                <p className='text-muted-foreground text-sm text-pretty'>
-                  Event Capture lets users capture every moment of their event
-                  from multiple perspectives. With easy QR code sharing, guests
-                  can upload photos, which are organized in an intuitive
-                  dashboard. Designed for simplicity and security, it ensures
-                  memories are preserved and accessible for any event size.
-                </p>
-              </div>
-            </div>
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Next.js</Badge>
-              <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>JavaScript</Badge>
-              <Badge variant='secondary'>Tailwind CSS</Badge>
-              <Badge variant='outline'>Cloudflare R2</Badge>
-              <Badge variant='outline'>Drizzle</Badge>
-              <Badge variant='outline'>Stripe</Badge>
-              <Badge variant='outline'>Shadcn/ui</Badge>
             </div>
           </div>
 
