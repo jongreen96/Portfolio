@@ -94,8 +94,7 @@ export default function Home() {
           high-performing web applications. Proficient in technologies such as
           Next.js, React, Postgres, and TailwindCSS, with a strong foundation
           built through self-learning on platforms like Codecademy and
-          Harvard&apos;s CS50x. Passionate about building efficient and scalable
-          solutions.
+          Harvard&apos;s CS50x.
         </p>
       </section>
 
