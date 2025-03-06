@@ -135,7 +135,6 @@ export default function Home() {
                   <Link
                     href='https://github.com/jongreen96/MyGPT'
                     target='_blank'
-                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
                     <Image
                       src='/github.png'
@@ -143,9 +142,7 @@ export default function Home() {
                       width={15}
                       height={15}
                       aria-label='github'
-                      className='opacity-50'
                     />
-                    <span>View on GitHub</span>
                   </Link>
                 </div>
 
@@ -207,7 +204,6 @@ export default function Home() {
                   <Link
                     href='https://github.com/jongreen96/EventCapture'
                     target='_blank'
-                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
                     <Image
                       src='/github.png'
@@ -215,9 +211,7 @@ export default function Home() {
                       width={15}
                       height={15}
                       aria-label='github'
-                      className='opacity-50'
                     />
-                    <span>View on GitHub</span>
                   </Link>
                 </div>
 
@@ -277,7 +271,6 @@ export default function Home() {
                   <Link
                     href='https://github.com/jongreen96/GreenVinylGraphics'
                     target='_blank'
-                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
                     <Image
                       src='/github.png'
@@ -285,9 +278,7 @@ export default function Home() {
                       width={15}
                       height={15}
                       aria-label='github'
-                      className='opacity-50'
                     />
-                    <span>View on GitHub</span>
                   </Link>
                 </div>
 
@@ -346,7 +337,6 @@ export default function Home() {
                   <Link
                     href='https://github.com/jongreen96/Recapit'
                     target='_blank'
-                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
                     <Image
                       src='/github.png'
@@ -354,9 +344,7 @@ export default function Home() {
                       width={15}
                       height={15}
                       aria-label='github'
-                      className='opacity-50'
                     />
-                    <span>View on GitHub</span>
                   </Link>
                 </div>
 
