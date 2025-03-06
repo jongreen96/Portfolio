@@ -118,17 +118,35 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-between'>
+                  <div className='flex items-center'>
+                    <Link
+                      href='https://my-gpt.app'
+                      target='_blank'
+                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    >
+                      <h3 className='text-xl tracking-tight'>My-GPT</h3>
+                    </Link>
+                    <span className='text-green-500 text-xl ml-2 select-none'>
+                      •
+                    </span>
+                  </div>
+
                   <Link
-                    href='https://my-gpt.app'
+                    href='https://github.com/jongreen96/MyGPT'
                     target='_blank'
-                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
-                    <h3 className='text-xl tracking-tight'>My-GPT</h3>
+                    <Image
+                      src='/github.png'
+                      alt='logo'
+                      width={15}
+                      height={15}
+                      aria-label='github'
+                      className='opacity-50'
+                    />
+                    <span>View on GitHub</span>
                   </Link>
-                  <span className='text-green-500 text-xl ml-2 select-none'>
-                    •
-                  </span>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -172,17 +190,35 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-between'>
+                  <div className='flex items-center'>
+                    <Link
+                      href='https://event-capture.jongreen.dev/'
+                      target='_blank'
+                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    >
+                      <h3 className='text-xl tracking-tight'>Event Capture</h3>
+                    </Link>
+                    <span className='text-amber-500 text-xl ml-2 select-none'>
+                      •
+                    </span>
+                  </div>
+
                   <Link
-                    href='https://event-capture.jongreen.dev/'
+                    href='https://github.com/jongreen96/EventCapture'
                     target='_blank'
-                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
-                    <h3 className='text-xl tracking-tight'>Event Capture</h3>
+                    <Image
+                      src='/github.png'
+                      alt='logo'
+                      width={15}
+                      height={15}
+                      aria-label='github'
+                      className='opacity-50'
+                    />
+                    <span>View on GitHub</span>
                   </Link>
-                  <span className='text-amber-500 text-xl ml-2 select-none'>
-                    •
-                  </span>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -222,19 +258,37 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-between'>
+                  <div className='flex items-center'>
+                    <Link
+                      href='https://greenvinylgraphics.com'
+                      target='_blank'
+                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    >
+                      <h3 className='text-xl tracking-tight'>
+                        Green Vinyl Graphics
+                      </h3>
+                    </Link>
+                    <span className='text-green-500 text-xl ml-2 select-none'>
+                      •
+                    </span>
+                  </div>
+
                   <Link
-                    href='https://greenvinylgraphics.com'
+                    href='https://github.com/jongreen96/GreenVinylGraphics'
                     target='_blank'
-                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
-                    <h3 className='text-xl tracking-tight'>
-                      Green Vinyl Graphics
-                    </h3>
+                    <Image
+                      src='/github.png'
+                      alt='logo'
+                      width={15}
+                      height={15}
+                      aria-label='github'
+                      className='opacity-50'
+                    />
+                    <span>View on GitHub</span>
                   </Link>
-                  <span className='text-green-500 text-xl ml-2 select-none'>
-                    •
-                  </span>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -275,17 +329,35 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-between'>
+                  <div className='flex items-center'>
+                    <Link
+                      href='https://recapit-reddit.netlify.app'
+                      target='_blank'
+                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    >
+                      <h3 className='text-xl tracking-tight'>Recapit</h3>
+                    </Link>
+                    <span className='text-green-500 text-xl ml-2 select-none'>
+                      •
+                    </span>
+                  </div>
+
                   <Link
-                    href='https://recapit-reddit.netlify.app'
+                    href='https://github.com/jongreen96/Recapit'
                     target='_blank'
-                    className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                    className='text-muted-foreground/50 flex items-center gap-2 text-sm underline underline-offset-2 decoration-1 hover:text-blue-300'
                   >
-                    <h3 className='text-xl tracking-tight'>Recapit</h3>
+                    <Image
+                      src='/github.png'
+                      alt='logo'
+                      width={15}
+                      height={15}
+                      aria-label='github'
+                      className='opacity-50'
+                    />
+                    <span>View on GitHub</span>
                   </Link>
-                  <span className='text-green-500 text-xl ml-2 select-none'>
-                    •
-                  </span>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
