@@ -57,18 +57,6 @@ export default function Home() {
                 />
               </Link>
             </Button>
-
-            <Button variant='outline' size='icon' asChild>
-              <Link href='https://twitter.com/JonGreenDotDev' target='_blank'>
-                <Image
-                  src='/x.png'
-                  alt='logo'
-                  width={19}
-                  height={19}
-                  aria-label='twitter'
-                />
-              </Link>
-            </Button>
           </div>
         </div>
 
