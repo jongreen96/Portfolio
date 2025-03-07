@@ -118,7 +118,7 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <Link
                       href='https://my-gpt.app'
@@ -187,7 +187,7 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <Link
                       href='https://event-capture.jongreen.dev/'
@@ -252,7 +252,7 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <Link
                       href='https://greenvinylgraphics.com'
@@ -320,7 +320,7 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <div className='flex items-center justify-between'>
+                <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <Link
                       href='https://recapit-reddit.netlify.app'
