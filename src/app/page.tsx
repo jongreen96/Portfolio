@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='min-h-dvh max-w-3xl min-w-[375px] mx-auto px-2 py-20 space-y-16'>
+    <main className='min-h-[calc(100dvh-40px)] max-w-3xl min-w-[375px] mx-auto px-2 py-20 space-y-16'>
       <section className='flex justify-between'>
         <div className='text-lg space-y-2'>
           <div>
