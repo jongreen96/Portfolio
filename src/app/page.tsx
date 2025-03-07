@@ -148,14 +148,15 @@ export default function Home() {
             <div className='flex flex-wrap gap-1'>
               <Badge variant='secondary'>Next.js</Badge>
               <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>TypeScript</Badge>
               <Badge variant='secondary'>Tailwind CSS</Badge>
               <Badge variant='outline'>Prisma</Badge>
               <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>PostgreSQL</Badge>
               <Badge variant='outline'>AuthJS</Badge>
+              <Badge variant='outline'>Sentry</Badge>
               <Badge variant='outline'>Shadcn/ui</Badge>
               <Badge variant='outline'>OpenAI API</Badge>
-              <Badge variant='outline'>Postgres DB</Badge>
             </div>
           </div>
 
@@ -215,12 +216,15 @@ export default function Home() {
             <div className='flex flex-wrap gap-1'>
               <Badge variant='secondary'>Next.js</Badge>
               <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>TypeScript</Badge>
               <Badge variant='secondary'>Tailwind CSS</Badge>
               <Badge variant='outline'>Cloudflare R2</Badge>
-              <Badge variant='outline'>Drizzle</Badge>
+              <Badge variant='outline'>PostgreSQL</Badge>
               <Badge variant='outline'>Stripe</Badge>
+              <Badge variant='outline'>Drizzle</Badge>
               <Badge variant='outline'>Shadcn/ui</Badge>
+              <Badge variant='outline'>Sharp</Badge>
+              <Badge variant='outline'>Resend</Badge>
             </div>
           </div>
 
@@ -282,12 +286,14 @@ export default function Home() {
             <div className='flex flex-wrap gap-1'>
               <Badge variant='secondary'>Next.js</Badge>
               <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>TypeScript</Badge>
               <Badge variant='secondary'>Tailwind CSS</Badge>
               <Badge variant='outline'>Drizzle</Badge>
               <Badge variant='outline'>Stripe</Badge>
               <Badge variant='outline'>Shadcn/ui</Badge>
+              <Badge variant='outline'>UploadThing</Badge>
               <Badge variant='outline'>Supabase</Badge>
+              <Badge variant='outline'>Zod</Badge>
               <Badge variant='outline'>Resend</Badge>
             </div>
           </div>
