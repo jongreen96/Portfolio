@@ -163,7 +163,7 @@ export default function Home() {
           <div className='space-y-2'>
             <div className='flex gap-4'>
               <Link
-                href='https://event-capture.jongreen.dev/'
+                href='https://ec.jongreen.dev/'
                 target='_blank'
                 className='shrink-0'
               >
@@ -179,7 +179,7 @@ export default function Home() {
                 <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <Link
-                      href='https://event-capture.jongreen.dev/'
+                      href='https://ec.jongreen.dev/'
                       target='_blank'
                       className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                     >
@@ -191,7 +191,7 @@ export default function Home() {
                   </div>
 
                   <Link
-                    href='https://github.com/jongreen96/EventCapture'
+                    href='https://github.com/jongreen96/Event-Capture'
                     target='_blank'
                   >
                     <Image
@@ -214,17 +214,16 @@ export default function Home() {
               </div>
             </div>
             <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Next.js</Badge>
+              <Badge variant='secondary'>Vite</Badge>
               <Badge variant='secondary'>React</Badge>
               <Badge variant='secondary'>TypeScript</Badge>
               <Badge variant='secondary'>Tailwind CSS</Badge>
+              <Badge variant='outline'>Tanstack Router</Badge>
+              <Badge variant='outline'>Tanstack Query</Badge>
               <Badge variant='outline'>Cloudflare R2</Badge>
               <Badge variant='outline'>PostgreSQL</Badge>
-              <Badge variant='outline'>Stripe</Badge>
-              <Badge variant='outline'>Drizzle</Badge>
               <Badge variant='outline'>Shadcn/ui</Badge>
               <Badge variant='outline'>Sharp</Badge>
-              <Badge variant='outline'>Resend</Badge>
             </div>
           </div>
 
