@@ -118,7 +118,7 @@ function App() {
               <Badge variant='secondary'>Bun</Badge>
               <Badge variant='secondary'>Express.js</Badge>
               <Badge variant='secondary'>PostgreSQL</Badge>
-              <Badge variant='secondary'>SQL</Badge>
+              <Badge variant='secondary'>AI LLM</Badge>
             </div>
           </li>
         </ul>
