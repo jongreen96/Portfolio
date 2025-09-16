@@ -1,5 +1,3 @@
-'use client';
-
 import { useEffect, useMemo, useRef } from 'react';
 
 export default function Background() {

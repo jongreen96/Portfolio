@@ -1,73 +1,69 @@
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { MailIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
+import eventcapturepreview from './assets/event-capture.png';
+import githubicon from './assets/github.png';
+import greenvinylgraphicspreview from './assets/greenvinylgraphics.png';
+import mygptpreview from './assets/my-gpt.png';
+import profilephoto from './assets/profile-photo.jpg';
+import { Badge } from './components/ui/badge';
+import { Button } from './components/ui/button';
 
-import { Mail, MapPin, Phone } from 'lucide-react';
-import Image from 'next/image';
-import Link from 'next/link';
-
-export default function Home() {
+function App() {
   return (
     <main className='min-h-[calc(100dvh-40px)] max-w-3xl min-w-[375px] mx-auto px-2 py-20 space-y-16'>
       <section className='flex justify-between'>
         <div className='text-lg space-y-2'>
           <div>
             <h1 className='text-4xl font-bold tracking-tighter'>Jon Green</h1>
-            <p className='mt-1 text-xl tracking-tight'>
-              Full Stack Web Developer
-            </p>
-            <Link
+            <p className='mt-1 text-xl tracking-tight'>Software Engineer</p>
+            <a
               href='https://www.google.com/maps/place/Sheffield'
               target='_blank'
               className='flex text-muted-foreground w-fit hover:underline'
             >
-              <MapPin className='size-3 my-auto mr-1' />
+              <MapPinIcon className='size-3 my-auto mr-1' />
               <p className='text-sm '>Sheffield, England</p>
-            </Link>
+            </a>
           </div>
 
           <div className='pt-2 space-x-2'>
             <Button variant='outline' size='icon' asChild>
-              <Link href='tel:+44 7769674943' target='_blank'>
-                <Phone
+              <a href='tel:+44 7769674943' target='_blank'>
+                <PhoneIcon
                   className='text-muted-foreground'
                   size={20}
                   aria-label='phone'
                 />
-              </Link>
+              </a>
             </Button>
 
             <Button variant='outline' size='icon' asChild>
-              <Link href='mailto: jongreen1996@gmail.com' target='_blank'>
-                <Mail
+              <a href='mailto: jongreen1996@gmail.com' target='_blank'>
+                <MailIcon
                   className='text-muted-foreground'
                   size={20}
                   aria-label='email'
                 />
-              </Link>
+              </a>
             </Button>
 
             <Button variant='outline' size='icon' asChild>
-              <Link href='https://github.com/jongreen96' target='_blank'>
-                <Image
-                  src='/github.png'
+              <a href='https://github.com/jongreen96' target='_blank'>
+                <img
+                  src={githubicon}
+                  className='size-4'
                   alt='logo'
-                  width={19}
-                  height={19}
                   aria-label='github'
                 />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
 
         <div>
-          <Image
-            src='/profile-photo.jpg'
+          <img
+            src={profilephoto}
             alt='me'
-            width={160}
-            height={160}
-            priority
-            className='rounded-xl min-w-40'
+            className='rounded-xl min-w-40 size-40'
           />
         </div>
       </section>
@@ -78,12 +74,54 @@ export default function Home() {
         </h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
-          Full stack web developer dedicated to crafting user-friendly and
-          high-performing web applications. Proficient in technologies such as
-          Next.js, React, Postgres, and TailwindCSS, with a strong foundation
-          built through self-learning on platforms like Codecademy and
-          Harvard&apos;s CS50x.
+          Software engineer with experience in building, deploying, automating,
+          and monitoring applications across VPS and home-lab environments.
+          Skilled with Docker, Linux, Cloudflare, nginx, and Hetzner
+          infrastructure, with a strong foundation in full-stack development
+          (React, Next.js, PostgreSQL). Confident in building and managing
+          reliable systems, while continuously expanding expertise in modern
+          DevOps practices.
         </p>
+      </section>
+
+      <section>
+        <h2 className='text-2xl font-semibold tracking-tight pb-4'>
+          Technical Skills
+        </h2>
+        <ul className='space-y-2'>
+          <li className='flex items-center gap-2'>
+            DevOps:
+            <div className='space-x-1'>
+              <Badge variant='secondary'>Docker</Badge>
+              <Badge variant='secondary'>Linux</Badge>
+              <Badge variant='secondary'>Cloudflare</Badge>
+              <Badge variant='secondary'>Hetzner</Badge>
+              <Badge variant='secondary'>Nginx</Badge>
+              <Badge variant='secondary'>UFW</Badge>
+              <Badge variant='secondary'>Git</Badge>
+            </div>
+          </li>
+          <li className='flex items-center gap-2'>
+            Frontend:
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>React</Badge>
+              <Badge variant='secondary'>Next.js</Badge>
+              <Badge variant='secondary'>TypeScript</Badge>
+              <Badge variant='secondary'>JavaScript</Badge>
+              <Badge variant='secondary'>Tailwind</Badge>
+            </div>
+          </li>
+          <li className='flex items-center gap-2'>
+            Backend:
+            <div className='flex flex-wrap gap-1'>
+              <Badge variant='secondary'>Node.js</Badge>
+              <Badge variant='secondary'>Bun</Badge>
+              <Badge variant='secondary'>Express.js</Badge>
+              <Badge variant='secondary'>PostgreSQL</Badge>
+              <Badge variant='secondary'>SQL</Badge>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -92,46 +130,36 @@ export default function Home() {
         <div className='space-y-6'>
           <div className='space-y-2'>
             <div className='flex gap-4'>
-              <Link
-                href='https://my-gpt.app'
-                target='_blank'
-                className='shrink-0'
-              >
-                <Image
-                  src='/my-gpt.png'
+              <a href='https://my-gpt.app' target='_blank' className='shrink-0'>
+                <img
+                  src={mygptpreview}
                   alt='My-GPT website preview'
-                  width={160}
-                  height={160}
-                  className='rounded border-1'
+                  className='rounded border-1 size-40'
                 />
-              </Link>
+              </a>
               <div>
                 <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
-                    <Link
+                    <a
                       href='https://my-gpt.app'
                       target='_blank'
                       className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                     >
                       <h3 className='text-xl tracking-tight'>My-GPT</h3>
-                    </Link>
+                    </a>
                     <span className='text-green-500 text-xl ml-2 select-none'>
                       •
                     </span>
                   </div>
 
-                  <Link
-                    href='https://github.com/jongreen96/MyGPT'
-                    target='_blank'
-                  >
-                    <Image
-                      src='/github.png'
+                  <a href='https://github.com/jongreen96/MyGPT' target='_blank'>
+                    <img
+                      src={githubicon}
                       alt='logo'
-                      width={15}
-                      height={15}
+                      className='size-4'
                       aria-label='github'
                     />
-                  </Link>
+                  </a>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -162,46 +190,43 @@ export default function Home() {
 
           <div className='space-y-2'>
             <div className='flex gap-4'>
-              <Link
+              <a
                 href='https://ec.jongreen.dev/'
                 target='_blank'
                 className='shrink-0'
               >
-                <Image
-                  src='/event-capture.png'
+                <img
+                  src={eventcapturepreview}
                   alt='Event Capture website preview'
-                  width={160}
-                  height={160}
-                  className='rounded border-1'
+                  className='rounded border-1 size-40'
                 />
-              </Link>
+              </a>
               <div>
                 <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
-                    <Link
+                    <a
                       href='https://ec.jongreen.dev/'
                       target='_blank'
                       className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                     >
                       <h3 className='text-xl tracking-tight'>Event Capture</h3>
-                    </Link>
+                    </a>
                     <span className='text-amber-500 text-xl ml-2 select-none'>
                       •
                     </span>
                   </div>
 
-                  <Link
+                  <a
                     href='https://github.com/jongreen96/Event-Capture'
                     target='_blank'
                   >
-                    <Image
-                      src='/github.png'
+                    <img
+                      src={githubicon}
                       alt='logo'
-                      width={15}
-                      height={15}
+                      className='size-4'
                       aria-label='github'
                     />
-                  </Link>
+                  </a>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -229,23 +254,21 @@ export default function Home() {
 
           <div className='space-y-2'>
             <div className='flex gap-4'>
-              <Link
+              <a
                 href='https://greenvinylgraphics.com'
                 target='_blank'
                 className='shrink-0'
               >
-                <Image
-                  src='/greenvinylgraphics.png'
+                <img
+                  src={greenvinylgraphicspreview}
                   alt='Green Vinyl Graphics website preview'
-                  width={160}
-                  height={160}
-                  className='rounded border-1'
+                  className='rounded border-1 size-40'
                 />
-              </Link>
+              </a>
               <div>
                 <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
-                    <Link
+                    <a
                       href='https://greenvinylgraphics.com'
                       target='_blank'
                       className='underline underline-offset-2 decoration-1 hover:text-blue-300'
@@ -253,24 +276,23 @@ export default function Home() {
                       <h3 className='text-xl tracking-tight'>
                         Green Vinyl Graphics
                       </h3>
-                    </Link>
+                    </a>
                     <span className='text-green-500 text-xl ml-2 select-none'>
                       •
                     </span>
                   </div>
 
-                  <Link
+                  <a
                     href='https://github.com/jongreen96/GreenVinylGraphics'
                     target='_blank'
                   >
-                    <Image
-                      src='/github.png'
+                    <img
+                      src={githubicon}
                       alt='logo'
-                      width={15}
-                      height={15}
+                      className='size-4'
                       aria-label='github'
                     />
-                  </Link>
+                  </a>
                 </div>
 
                 <p className='text-muted-foreground text-sm text-pretty'>
@@ -300,47 +322,6 @@ export default function Home() {
       </section>
 
       <section>
-        <h2 className='text-2xl font-semibold tracking-tight pb-4'>Skills</h2>
-        <div className='space-y-2'>
-          <p className='text-muted-foreground text-sm text-pretty'>
-            I specialize in high-performance web applications using Next.js,
-            React, Node.js, and PostgreSQL. I deploy projects on VPS
-            environments with Coolify for seamless database and service
-            management. Always eager to learn, I&apos;m continually integrating
-            new technologies to enhance both functionality and workflows.
-          </p>
-
-          <div className='flex flex-wrap gap-1'>
-            <Badge variant='secondary'>HTML</Badge>
-            <Badge variant='secondary'>CSS</Badge>
-            <Badge variant='secondary'>React</Badge>
-            <Badge variant='secondary'>TypeScript</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
-            <Badge variant='secondary'>Next.js</Badge>
-            <Badge variant='secondary'>Node.js</Badge>
-            <Badge variant='secondary'>Express.js</Badge>
-            <Badge variant='secondary'>Tailwind CSS</Badge>
-            <Badge variant='secondary'>PostgreSQL</Badge>
-            <Badge variant='secondary'>SQL</Badge>
-            <Badge variant='outline'>C</Badge>
-            <Badge variant='outline'>Python</Badge>
-            <Badge variant='outline'>Git</Badge>
-            <Badge variant='outline'>GitHub</Badge>
-            <Badge variant='outline'>Drizzle</Badge>
-            <Badge variant='outline'>Prisma</Badge>
-            <Badge variant='outline'>Redux</Badge>
-            <Badge variant='outline'>Stripe</Badge>
-            <Badge variant='outline'>Clerk</Badge>
-            <Badge variant='outline'>Vite</Badge>
-            <Badge variant='outline'>Axios</Badge>
-            <Badge variant='outline'>Netlify</Badge>
-            <Badge variant='outline'>Bcrypt</Badge>
-            <Badge variant='outline'>Data Structures & Algorithms</Badge>
-          </div>
-        </div>
-      </section>
-
-      <section>
         <h2 className='text-2xl font-semibold tracking-tight pb-4'>
           Education
         </h2>
@@ -348,13 +329,13 @@ export default function Home() {
         <div className='space-y-6'>
           <div>
             <span className='flex gap-4 items-baseline'>
-              <Link
+              <a
                 href='https://pll.harvard.edu/course/cs50-introduction-computer-science'
                 target='_blank'
                 className='underline underline-offset-2 decoration-1 hover:text-blue-300'
               >
                 <h3 className='text-xl tracking-tight'>Harvard&apos;s CS50x</h3>
-              </Link>
+              </a>
               <p className='text-muted-foreground text-sm text-pretty'>2024</p>
             </span>
 
@@ -368,13 +349,13 @@ export default function Home() {
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <Link
+              <a
                 href='https://www.codecademy.com/learn/paths/full-stack-engineer-career-path'
                 target='_blank'
                 className='underline underline-offset-2 decoration-1 hover:text-blue-300'
               >
                 <h3 className='text-xl tracking-tight'>CodeCademy</h3>
-              </Link>
+              </a>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2023 - 2024
               </p>
@@ -390,7 +371,7 @@ export default function Home() {
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <Link
+              <a
                 href='https://www.dearne-coll.ac.uk/'
                 target='_blank'
                 className='underline underline-offset-2 decoration-1 hover:text-blue-300'
@@ -398,7 +379,7 @@ export default function Home() {
                 <h3 className='text-xl tracking-tight'>
                   Dearne Valley College
                 </h3>
-              </Link>
+              </a>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2012 - 2013
               </p>
@@ -413,13 +394,13 @@ export default function Home() {
 
           <div>
             <span className='flex gap-4 items-baseline'>
-              <Link
+              <a
                 href='https://www.wingfieldacademy.org/'
                 target='_blank'
                 className='underline underline-offset-2 decoration-1 hover:text-blue-300'
               >
                 <h3 className='text-xl tracking-tight'>Wingfield Academy</h3>
-              </Link>
+              </a>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2007 - 2012
               </p>
@@ -439,19 +420,21 @@ export default function Home() {
         <h2 className='text-2xl font-semibold tracking-tight pb-4'>About Me</h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
-          I have always been passionate about technology, as reflected in my
-          early studies in IT. However, after college, I pursued a more
-          immediate source of income by working in retail while running my own
-          business in sign writing and vector template design. Over the years,
-          my love for web development continued to grow, leading me to formally
-          transition into the field. I am now actively seeking my first role in
-          the industry, eager to work alongside experienced professionals,
-          refine my skills, and contribute to meaningful projects. Long-term
-          career stability is important to me, and I look forward to being part
-          of a team where I can grow, collaborate, and continuously improve my
-          expertise.
+          I've always been passionate about technology, from early IT studies to
+          running a small business in digital design. In recent years Ive
+          focused on web development, building modern applications with React,
+          Next.js, and PostgreSQL while completing projects that solve
+          real-world problems. Alongside this, I've expanded into DevOps to
+          support and scale my work, managing deployments on Hetzner VPS and in
+          a home-lab environment with Docker and Raspberry Pi. By configuring
+          nginx, Cloudflare, and Coolify, I've gained hands-on experience with
+          automation, SSL, firewalls, monitoring, and backups. I'm eager to
+          continue developing both my web development and DevOps expertise as
+          part of a professional team.
         </p>
       </section>
     </main>
   );
 }
+
+export default App;
