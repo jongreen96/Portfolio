@@ -88,40 +88,34 @@ function App() {
         <h2 className='text-2xl font-semibold tracking-tight pb-4'>
           Technical Skills
         </h2>
-        <ul className='space-y-2'>
-          <li className='flex items-center gap-2'>
-            DevOps:
-            <div className='space-x-1'>
-              <Badge variant='secondary'>Docker</Badge>
-              <Badge variant='secondary'>Linux</Badge>
-              <Badge variant='secondary'>Cloudflare</Badge>
-              <Badge variant='secondary'>Hetzner</Badge>
-              <Badge variant='secondary'>Nginx</Badge>
-              <Badge variant='secondary'>UFW</Badge>
-              <Badge variant='secondary'>Git</Badge>
-            </div>
-          </li>
-          <li className='flex items-center gap-2'>
-            Frontend:
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>Next.js</Badge>
-              <Badge variant='secondary'>TypeScript</Badge>
-              <Badge variant='secondary'>JavaScript</Badge>
-              <Badge variant='secondary'>Tailwind</Badge>
-            </div>
-          </li>
-          <li className='flex items-center gap-2'>
-            Backend:
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Node.js</Badge>
-              <Badge variant='secondary'>Bun</Badge>
-              <Badge variant='secondary'>Express.js</Badge>
-              <Badge variant='secondary'>PostgreSQL</Badge>
-              <Badge variant='secondary'>AI LLM</Badge>
-            </div>
-          </li>
-        </ul>
+        <div className='grid grid-cols-[65px_minmax(0,_1fr)] gap-x-4 gap-y-2 items-center'>
+          <span>DevOps:</span>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>Docker</Badge>
+            <Badge variant='secondary'>Linux</Badge>
+            <Badge variant='secondary'>Cloudflare</Badge>
+            <Badge variant='secondary'>Hetzner</Badge>
+            <Badge variant='secondary'>Nginx</Badge>
+            <Badge variant='secondary'>UFW</Badge>
+            <Badge variant='secondary'>Git</Badge>
+          </div>
+          <span>Frontend:</span>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>React</Badge>
+            <Badge variant='secondary'>Next.js</Badge>
+            <Badge variant='secondary'>TypeScript</Badge>
+            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>Tailwind</Badge>
+          </div>
+          <span>Backend:</span>
+          <div className='flex flex-wrap gap-1'>
+            <Badge variant='secondary'>Node.js</Badge>
+            <Badge variant='secondary'>Bun</Badge>
+            <Badge variant='secondary'>Express.js</Badge>
+            <Badge variant='secondary'>PostgreSQL</Badge>
+            <Badge variant='secondary'>AI LLM</Badge>
+          </div>
+        </div>
       </section>
 
       <section>
@@ -134,10 +128,10 @@ function App() {
                 <img
                   src={mygptpreview}
                   alt='My-GPT website preview'
-                  className='rounded border-1 size-40'
+                  className='rounded border-1 w-40 h-auto'
                 />
               </a>
-              <div>
+              <div className='ml-5 -mt-1 flex flex-col justify-between'>
                 <div className='flex items-center gap-2'>
                   <div className='flex items-center'>
                     <a
@@ -162,29 +156,33 @@ function App() {
                   </a>
                 </div>
 
-                <p className='text-muted-foreground text-sm text-pretty'>
-                  My-GPT is a Next.js web application that provides users with
-                  on-demand access to OpenAI&apos;s Chat and Image Generation
-                  models. Users can engage in powerful text generation, coding
-                  assistance, and deep AI analysis, as well as create stunning
-                  AI-generated images, all on a pay-as-you-go basis. The
-                  platform ensures seamless synchronization across devices,
-                  allowing users to continue their work anywhere.
-                </p>
+                <ul className='list-disc text-muted-foreground text-sm text-pretty'>
+                  <li>
+                    Deployed to Hetzner with automated deployments, backups, and
+                    monitoring through Coolify.
+                  </li>
+                  <li>
+                    Configured DNS and SSL via Cloudflare and Let's Encrypt.
+                  </li>
+                  <li>
+                    Provides AI chat and image generation with pay-as-you-go
+                    billing.
+                  </li>
+                </ul>
+                <div className='flex flex-wrap gap-1'>
+                  <Badge variant='secondary'>Next.js</Badge>
+                  <Badge variant='secondary'>React</Badge>
+                  <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Prisma</Badge>
+                  <Badge variant='outline'>Stripe</Badge>
+                  <Badge variant='outline'>PostgreSQL</Badge>
+                  <Badge variant='outline'>AuthJS</Badge>
+                  <Badge variant='outline'>Sentry</Badge>
+                  <Badge variant='outline'>Shadcn/ui</Badge>
+                  <Badge variant='outline'>OpenAI API</Badge>
+                </div>
               </div>
-            </div>
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Next.js</Badge>
-              <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>TypeScript</Badge>
-              <Badge variant='secondary'>Tailwind CSS</Badge>
-              <Badge variant='outline'>Prisma</Badge>
-              <Badge variant='outline'>Stripe</Badge>
-              <Badge variant='outline'>PostgreSQL</Badge>
-              <Badge variant='outline'>AuthJS</Badge>
-              <Badge variant='outline'>Sentry</Badge>
-              <Badge variant='outline'>Shadcn/ui</Badge>
-              <Badge variant='outline'>OpenAI API</Badge>
             </div>
           </div>
 
@@ -198,57 +196,68 @@ function App() {
                 <img
                   src={eventcapturepreview}
                   alt='Event Capture website preview'
-                  className='rounded border-1 size-40'
+                  className='rounded border-1 w-40 h-auto'
                 />
               </a>
-              <div>
-                <div className='flex items-center gap-2'>
-                  <div className='flex items-center'>
+              <div className='ml-5 -mt-1 flex flex-col justify-between'>
+                <div>
+                  <div className='flex items-center gap-2'>
+                    <div className='flex items-center'>
+                      <a
+                        href='https://ec.jongreen.dev/'
+                        target='_blank'
+                        className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                      >
+                        <h3 className='text-xl tracking-tight'>
+                          Event Capture
+                        </h3>
+                      </a>
+                      <span className='text-amber-500 text-xl ml-2 select-none'>
+                        •
+                      </span>
+                    </div>
+
                     <a
-                      href='https://ec.jongreen.dev/'
+                      href='https://github.com/jongreen96/Event-Capture'
                       target='_blank'
-                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                     >
-                      <h3 className='text-xl tracking-tight'>Event Capture</h3>
+                      <img
+                        src={githubicon}
+                        alt='logo'
+                        className='size-4'
+                        aria-label='github'
+                      />
                     </a>
-                    <span className='text-amber-500 text-xl ml-2 select-none'>
-                      •
-                    </span>
                   </div>
 
-                  <a
-                    href='https://github.com/jongreen96/Event-Capture'
-                    target='_blank'
-                  >
-                    <img
-                      src={githubicon}
-                      alt='logo'
-                      className='size-4'
-                      aria-label='github'
-                    />
-                  </a>
+                  <ul className='list-disc text-muted-foreground text-sm text-pretty'>
+                    <li>
+                      Hosted on Hetzner with Coolify handling deployments and
+                      database containers.
+                    </li>
+                    <li>
+                      Integrated Cloudflare R2 via S3 API for scalable,
+                      cost-effective storage.
+                    </li>
+                    <li>
+                      Use tanstack router and query for efficient data fetching
+                      and state management.
+                    </li>
+                  </ul>
                 </div>
-
-                <p className='text-muted-foreground text-sm text-pretty'>
-                  Event Capture lets users capture lossless images of their
-                  event from multiple perspectives. With easy QR code sharing,
-                  guests can upload photos, which are organized in an intuitive
-                  dashboard. Designed for simplicity and security, it ensures
-                  memories are preserved and accessible for any event size.
-                </p>
+                <div className='flex flex-wrap gap-1'>
+                  <Badge variant='secondary'>Vite</Badge>
+                  <Badge variant='secondary'>React</Badge>
+                  <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Tanstack Router</Badge>
+                  <Badge variant='outline'>Tanstack Query</Badge>
+                  <Badge variant='outline'>Cloudflare R2</Badge>
+                  <Badge variant='outline'>PostgreSQL</Badge>
+                  <Badge variant='outline'>Shadcn/ui</Badge>
+                  <Badge variant='outline'>Sharp</Badge>
+                </div>
               </div>
-            </div>
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Vite</Badge>
-              <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>TypeScript</Badge>
-              <Badge variant='secondary'>Tailwind CSS</Badge>
-              <Badge variant='outline'>Tanstack Router</Badge>
-              <Badge variant='outline'>Tanstack Query</Badge>
-              <Badge variant='outline'>Cloudflare R2</Badge>
-              <Badge variant='outline'>PostgreSQL</Badge>
-              <Badge variant='outline'>Shadcn/ui</Badge>
-              <Badge variant='outline'>Sharp</Badge>
             </div>
           </div>
 
@@ -262,60 +271,69 @@ function App() {
                 <img
                   src={greenvinylgraphicspreview}
                   alt='Green Vinyl Graphics website preview'
-                  className='rounded border-1 size-40'
+                  className='rounded border-1 w-40 h-auto'
                 />
               </a>
-              <div>
-                <div className='flex items-center gap-2'>
-                  <div className='flex items-center'>
+              <div className='ml-5 -mt-1 flex flex-col justify-between'>
+                <div>
+                  <div className='flex items-center gap-2'>
+                    <div className='flex items-center'>
+                      <a
+                        href='https://greenvinylgraphics.com'
+                        target='_blank'
+                        className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                      >
+                        <h3 className='text-xl tracking-tight'>
+                          Green Vinyl Graphics
+                        </h3>
+                      </a>
+                      <span className='text-green-500 text-xl ml-2 select-none'>
+                        •
+                      </span>
+                    </div>
+
                     <a
-                      href='https://greenvinylgraphics.com'
+                      href='https://github.com/jongreen96/GreenVinylGraphics'
                       target='_blank'
-                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                     >
-                      <h3 className='text-xl tracking-tight'>
-                        Green Vinyl Graphics
-                      </h3>
+                      <img
+                        src={githubicon}
+                        alt='logo'
+                        className='size-4'
+                        aria-label='github'
+                      />
                     </a>
-                    <span className='text-green-500 text-xl ml-2 select-none'>
-                      •
-                    </span>
                   </div>
 
-                  <a
-                    href='https://github.com/jongreen96/GreenVinylGraphics'
-                    target='_blank'
-                  >
-                    <img
-                      src={githubicon}
-                      alt='logo'
-                      className='size-4'
-                      aria-label='github'
-                    />
-                  </a>
+                  <ul className='list-disc text-muted-foreground text-sm text-pretty'>
+                    <li>
+                      Redesigned the platform using Next.js for improved
+                      performance.
+                    </li>
+                    <li>
+                      Implemented server-side rendering (SSR) to enhance user
+                      experience.
+                    </li>
+                    <li>
+                      Created a seamless and responsive design for mobile
+                      devices.
+                    </li>
+                  </ul>
                 </div>
-
-                <p className='text-muted-foreground text-sm text-pretty'>
-                  Green Vinyl Graphics is a digital marketplace offering
-                  precision-designed vector templates for wrapping mobile
-                  devices. The platform was redeveloped using Next.js with
-                  server-side rendering (SSR) to enhance performance and user
-                  experience over the original site.
-                </p>
+                <div className='flex flex-wrap gap-1'>
+                  <Badge variant='secondary'>Next.js</Badge>
+                  <Badge variant='secondary'>React</Badge>
+                  <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Drizzle</Badge>
+                  <Badge variant='outline'>Stripe</Badge>
+                  <Badge variant='outline'>Shadcn/ui</Badge>
+                  <Badge variant='outline'>UploadThing</Badge>
+                  <Badge variant='outline'>Supabase</Badge>
+                  <Badge variant='outline'>Zod</Badge>
+                  <Badge variant='outline'>Resend</Badge>
+                </div>
               </div>
-            </div>
-            <div className='flex flex-wrap gap-1'>
-              <Badge variant='secondary'>Next.js</Badge>
-              <Badge variant='secondary'>React</Badge>
-              <Badge variant='secondary'>TypeScript</Badge>
-              <Badge variant='secondary'>Tailwind CSS</Badge>
-              <Badge variant='outline'>Drizzle</Badge>
-              <Badge variant='outline'>Stripe</Badge>
-              <Badge variant='outline'>Shadcn/ui</Badge>
-              <Badge variant='outline'>UploadThing</Badge>
-              <Badge variant='outline'>Supabase</Badge>
-              <Badge variant='outline'>Zod</Badge>
-              <Badge variant='outline'>Resend</Badge>
             </div>
           </div>
         </div>
@@ -433,6 +451,12 @@ function App() {
           part of a professional team.
         </p>
       </section>
+
+      <footer className='pt-4'>
+        <p className='text-muted-foreground text-center text-sm text-pretty'>
+          Jon Green - {new Date().getFullYear()}
+        </p>
+      </footer>
     </main>
   );
 }
