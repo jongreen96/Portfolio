@@ -128,7 +128,7 @@ function App() {
                 <img
                   src={mygptpreview}
                   alt='My-GPT website preview'
-                  className='rounded border-1 w-40 h-auto'
+                  className='rounded border w-40 h-auto'
                 />
               </a>
               <div className='ml-5 -mt-1 flex flex-col justify-between'>
@@ -196,7 +196,7 @@ function App() {
                 <img
                   src={eventcapturepreview}
                   alt='Event Capture website preview'
-                  className='rounded border-1 w-40 h-auto'
+                  className='rounded border w-40 h-auto'
                 />
               </a>
               <div className='ml-5 -mt-1 flex flex-col justify-between'>
@@ -264,14 +264,14 @@ function App() {
           <div className='space-y-2'>
             <div className='flex gap-4'>
               <a
-                href='https://greenvinylgraphics.com'
+                href='https://gvg.jongreen.dev'
                 target='_blank'
                 className='shrink-0'
               >
                 <img
                   src={greenvinylgraphicspreview}
                   alt='Green Vinyl Graphics website preview'
-                  className='rounded border-1 w-40 h-auto'
+                  className='rounded border w-40 h-auto'
                 />
               </a>
               <div className='ml-5 -mt-1 flex flex-col justify-between'>
@@ -279,7 +279,7 @@ function App() {
                   <div className='flex items-center gap-2'>
                     <div className='flex items-center'>
                       <a
-                        href='https://greenvinylgraphics.com'
+                        href='https://gvg.jongreen.dev'
                         target='_blank'
                         className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                       >
