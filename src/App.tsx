@@ -3,6 +3,7 @@ import eventcapturepreview from './assets/event-capture.png';
 import githubicon from './assets/github.png';
 import greenvinylgraphicspreview from './assets/greenvinylgraphics.png';
 import mygptpreview from './assets/my-gpt.png';
+import subtrackedpreview from './assets/sub-tracked.png';
 import profilephoto from './assets/profile-photo.jpg';
 import { Badge } from './components/ui/badge';
 import { Button } from './components/ui/button';
@@ -14,7 +15,7 @@ function App() {
         <div className='text-lg space-y-2'>
           <div>
             <h1 className='text-4xl font-bold tracking-tighter'>Jon Green</h1>
-            <p className='mt-1 text-xl tracking-tight'>Software Engineer</p>
+            <p className='mt-1 text-xl tracking-tight'>Full-Stack Developer</p>
             <a
               href='https://www.google.com/maps/place/Sheffield'
               target='_blank'
@@ -62,7 +63,7 @@ function App() {
         <div>
           <img
             src={profilephoto}
-            alt='me'
+            alt='Jon Green'
             className='rounded-xl min-w-40 size-40'
           />
         </div>
@@ -70,17 +71,16 @@ function App() {
 
       <section>
         <h2 className='text-2xl font-semibold tracking-tight pb-4'>
-          Objective
+          Profile
         </h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
-          Software engineer with experience in building, deploying, automating,
-          and monitoring applications across VPS and home-lab environments.
-          Skilled with Docker, Linux, Cloudflare, nginx, and Hetzner
-          infrastructure, with a strong foundation in full-stack development
-          (React, Next.js, PostgreSQL). Confident in building and managing
-          reliable systems, while continuously expanding expertise in modern
-          DevOps practices.
+          I build full-stack web applications, from the interface and data model to
+          authentication, file storage and deployment. My recent work combines React
+          and TypeScript with Cloudflare Workers, D1 and R2 across finance tools, AI
+          chat and event-media sharing. I focus on clear interfaces and the details
+          that make a product dependable: access control, consistent data and useful
+          recovery when something goes wrong.
         </p>
       </section>
 
@@ -96,7 +96,7 @@ function App() {
             <Badge variant='secondary'>Cloudflare</Badge>
             <Badge variant='secondary'>Hetzner</Badge>
             <Badge variant='secondary'>Nginx</Badge>
-            <Badge variant='secondary'>UFW</Badge>
+            <Badge variant='secondary'>Cloudflare Workers</Badge>
             <Badge variant='secondary'>Git</Badge>
           </div>
           <span>Frontend:</span>
@@ -104,16 +104,21 @@ function App() {
             <Badge variant='secondary'>React</Badge>
             <Badge variant='secondary'>Next.js</Badge>
             <Badge variant='secondary'>TypeScript</Badge>
-            <Badge variant='secondary'>JavaScript</Badge>
+            <Badge variant='secondary'>TanStack Router</Badge>
+            <Badge variant='secondary'>TanStack Query</Badge>
             <Badge variant='secondary'>Tailwind</Badge>
           </div>
           <span>Backend:</span>
           <div className='flex flex-wrap gap-1'>
             <Badge variant='secondary'>Node.js</Badge>
             <Badge variant='secondary'>Bun</Badge>
-            <Badge variant='secondary'>Express.js</Badge>
+            <Badge variant='secondary'>Hono</Badge>
+            <Badge variant='secondary'>Drizzle</Badge>
             <Badge variant='secondary'>PostgreSQL</Badge>
-            <Badge variant='secondary'>AI LLM</Badge>
+            <Badge variant='secondary'>D1 / SQLite</Badge>
+            <Badge variant='secondary'>R2</Badge>
+            <Badge variant='secondary'>Durable Objects</Badge>
+            <Badge variant='secondary'>Workers AI</Badge>
           </div>
         </div>
       </section>
@@ -124,79 +129,14 @@ function App() {
         <div className='space-y-6'>
           <div className='space-y-2'>
             <div className='flex gap-4'>
-              <a href='https://my-gpt.app' target='_blank' className='shrink-0'>
+              <a href='https://sub-tracked.com' target='_blank' className='shrink-0'>
                 <img
-                  src={mygptpreview}
-                  alt='My-GPT website preview'
-                  className='rounded border w-40 h-auto'
-                />
-              </a>
-              <div className='ml-5 -mt-1 flex flex-col justify-between'>
-                <div className='flex items-center gap-2'>
-                  <div className='flex items-center'>
-                    <a
-                      href='https://my-gpt.app'
-                      target='_blank'
-                      className='underline underline-offset-2 decoration-1 hover:text-blue-300'
-                    >
-                      <h3 className='text-xl tracking-tight'>My-GPT</h3>
-                    </a>
-                    <span className='text-green-500 text-xl ml-2 select-none'>
-                      •
-                    </span>
-                  </div>
-
-                  <a href='https://github.com/jongreen96/MyGPT' target='_blank'>
-                    <img
-                      src={githubicon}
-                      alt='logo'
-                      className='size-4'
-                      aria-label='github'
-                    />
-                  </a>
-                </div>
-
-                <ul className='list-disc text-muted-foreground text-sm text-pretty'>
-                  <li>
-                    Deployed to Hetzner with automated deployments, backups, and
-                    monitoring through Coolify.
-                  </li>
-                  <li>
-                    Configured DNS and SSL via Cloudflare and Let's Encrypt.
-                  </li>
-                  <li>
-                    Provides AI chat and image generation with pay-as-you-go
-                    billing.
-                  </li>
-                </ul>
-                <div className='flex flex-wrap gap-1'>
-                  <Badge variant='secondary'>Next.js</Badge>
-                  <Badge variant='secondary'>React</Badge>
-                  <Badge variant='secondary'>TypeScript</Badge>
-                  <Badge variant='secondary'>Tailwind CSS</Badge>
-                  <Badge variant='outline'>Prisma</Badge>
-                  <Badge variant='outline'>Stripe</Badge>
-                  <Badge variant='outline'>PostgreSQL</Badge>
-                  <Badge variant='outline'>AuthJS</Badge>
-                  <Badge variant='outline'>Sentry</Badge>
-                  <Badge variant='outline'>Shadcn/ui</Badge>
-                  <Badge variant='outline'>OpenAI API</Badge>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className='space-y-2'>
-            <div className='flex gap-4'>
-              <a
-                href='https://ec.jongreen.dev/'
-                target='_blank'
-                className='shrink-0'
-              >
-                <img
-                  src={eventcapturepreview}
-                  alt='Event Capture website preview'
-                  className='rounded border w-40 h-auto'
+                  src={subtrackedpreview}
+                  alt='Sub-Tracked homepage preview'
+                  width={1000}
+                  height={1000}
+                  loading='lazy'
+                  className='rounded border w-40 aspect-square object-cover'
                 />
               </a>
               <div className='ml-5 -mt-1 flex flex-col justify-between'>
@@ -204,58 +144,49 @@ function App() {
                   <div className='flex items-center gap-2'>
                     <div className='flex items-center'>
                       <a
-                        href='https://ec.jongreen.dev/'
+                        href='https://sub-tracked.com'
                         target='_blank'
                         className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                       >
-                        <h3 className='text-xl tracking-tight'>
-                          Event Capture
-                        </h3>
+                        <h3 className='text-xl tracking-tight'>Sub-Tracked</h3>
                       </a>
-                      <span className='text-amber-500 text-xl ml-2 select-none'>
+                      <span className='text-green-500 text-xl ml-2 select-none'>
                         •
                       </span>
                     </div>
-
-                    <a
-                      href='https://github.com/jongreen96/Event-Capture'
-                      target='_blank'
-                    >
+                    <a href='https://github.com/jongreen96/sub-tracked' target='_blank'>
                       <img
                         src={githubicon}
-                        alt='logo'
+                        alt='Sub-Tracked source on GitHub'
                         className='size-4'
-                        aria-label='github'
                       />
                     </a>
                   </div>
-
                   <ul className='list-disc text-muted-foreground text-sm text-pretty'>
-                    <li>
-                      Hosted on Hetzner with Coolify handling deployments and
-                      database containers.
-                    </li>
-                    <li>
-                      Integrated Cloudflare R2 via S3 API for scalable,
-                      cost-effective storage.
-                    </li>
-                    <li>
-                      Use tanstack router and query for efficient data fetching
-                      and state management.
-                    </li>
+                  <li>
+                    Built a personal finance app that brings accounts, income and
+                    recurring expenses into one place.
+                  </li>
+                  <li>
+                    Modelled payment schedules and account balances to help users
+                    plan around upcoming bills.
+                  </li>
+                  <li>
+                    Connected a React interface to authenticated server functions
+                    and a D1 database with Drizzle.
+                  </li>
                   </ul>
                 </div>
                 <div className='flex flex-wrap gap-1'>
-                  <Badge variant='secondary'>Vite</Badge>
                   <Badge variant='secondary'>React</Badge>
                   <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>TanStack Start</Badge>
                   <Badge variant='secondary'>Tailwind CSS</Badge>
-                  <Badge variant='outline'>Tanstack Router</Badge>
-                  <Badge variant='outline'>Tanstack Query</Badge>
-                  <Badge variant='outline'>Cloudflare R2</Badge>
-                  <Badge variant='outline'>PostgreSQL</Badge>
-                  <Badge variant='outline'>Shadcn/ui</Badge>
-                  <Badge variant='outline'>Sharp</Badge>
+                  <Badge variant='outline'>Cloudflare Workers</Badge>
+                  <Badge variant='outline'>D1</Badge>
+                  <Badge variant='outline'>Drizzle</Badge>
+                  <Badge variant='outline'>Better Auth</Badge>
+                  <Badge variant='outline'>TanStack Query</Badge>
                 </div>
               </div>
             </div>
@@ -263,15 +194,14 @@ function App() {
 
           <div className='space-y-2'>
             <div className='flex gap-4'>
-              <a
-                href='https://gvg.jongreen.dev'
-                target='_blank'
-                className='shrink-0'
-              >
+              <a href='https://gvg.jongreen.dev' target='_blank' className='shrink-0'>
                 <img
                   src={greenvinylgraphicspreview}
                   alt='Green Vinyl Graphics website preview'
-                  className='rounded border w-40 h-auto'
+                  width={1000}
+                  height={1000}
+                  loading='lazy'
+                  className='rounded border w-40 aspect-square object-cover'
                 />
               </a>
               <div className='ml-5 -mt-1 flex flex-col justify-between'>
@@ -283,55 +213,174 @@ function App() {
                         target='_blank'
                         className='underline underline-offset-2 decoration-1 hover:text-blue-300'
                       >
-                        <h3 className='text-xl tracking-tight'>
-                          Green Vinyl Graphics
-                        </h3>
+                        <h3 className='text-xl tracking-tight'>Green Vinyl Graphics</h3>
                       </a>
                       <span className='text-green-500 text-xl ml-2 select-none'>
                         •
                       </span>
                     </div>
-
-                    <a
-                      href='https://github.com/jongreen96/GreenVinylGraphics'
-                      target='_blank'
-                    >
+                    <a href='https://github.com/jongreen96/GreenVinylGraphics' target='_blank'>
                       <img
                         src={githubicon}
-                        alt='logo'
+                        alt='Green Vinyl Graphics source on GitHub'
                         className='size-4'
-                        aria-label='github'
                       />
                     </a>
                   </div>
-
                   <ul className='list-disc text-muted-foreground text-sm text-pretty'>
-                    <li>
-                      Redesigned the platform using Next.js for improved
-                      performance.
-                    </li>
-                    <li>
-                      Implemented server-side rendering (SSR) to enhance user
-                      experience.
-                    </li>
-                    <li>
-                      Created a seamless and responsive design for mobile
-                      devices.
-                    </li>
+                  <li>
+                    Rebuilt my former digital-template store as a portfolio demo,
+                    using its original catalogue of 52 products.
+                  </li>
+                  <li>
+                    Created searchable collections, detailed product previews and a
+                    persistent basket with a demo checkout.
+                  </li>
+                  <li>
+                    Added responsive artwork, keyboard navigation and reduced-motion
+                    support throughout the shopping experience.
+                  </li>
                   </ul>
                 </div>
                 <div className='flex flex-wrap gap-1'>
-                  <Badge variant='secondary'>Next.js</Badge>
                   <Badge variant='secondary'>React</Badge>
                   <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>TanStack Router</Badge>
                   <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Vite</Badge>
+                  <Badge variant='outline'>shadcn/ui</Badge>
+                  <Badge variant='outline'>Cloudflare Workers</Badge>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <a href='https://cf.my-gpt.app' target='_blank' className='shrink-0'>
+                <img
+                  src={mygptpreview}
+                  alt='My-GPT website preview'
+                  width={1000}
+                  height={1000}
+                  loading='lazy'
+                  className='rounded border w-40 aspect-square object-cover'
+                />
+              </a>
+              <div className='ml-5 -mt-1 flex flex-col justify-between'>
+                <div>
+                  <div className='flex items-center gap-2'>
+                    <div className='flex items-center'>
+                      <a
+                        href='https://cf.my-gpt.app'
+                        target='_blank'
+                        className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                      >
+                        <h3 className='text-xl tracking-tight'>My-GPT</h3>
+                      </a>
+                      <span className='text-green-500 text-xl ml-2 select-none'>
+                        •
+                      </span>
+                    </div>
+                    <a href='https://github.com/jongreen96/my-gpt-cf' target='_blank'>
+                      <img
+                        src={githubicon}
+                        alt='My-GPT source on GitHub'
+                        className='size-4'
+                      />
+                    </a>
+                  </div>
+                  <ul className='list-disc text-muted-foreground text-sm text-pretty'>
+                  <li>
+                    Built a multi-model AI chat app with streaming replies, file
+                    attachments and editable conversations.
+                  </li>
+                  <li>
+                    Used a Durable Object per conversation to coordinate generation,
+                    stream over WebSockets and persist messages.
+                  </li>
+                  <li>
+                    Added guest access with usage limits and account linking that
+                    preserves conversation history.
+                  </li>
+                  </ul>
+                </div>
+                <div className='flex flex-wrap gap-1'>
+                  <Badge variant='secondary'>React</Badge>
+                  <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>Hono</Badge>
+                  <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Workers AI</Badge>
+                  <Badge variant='outline'>Durable Objects</Badge>
+                  <Badge variant='outline'>D1</Badge>
+                  <Badge variant='outline'>R2</Badge>
+                  <Badge variant='outline'>Better Auth</Badge>
                   <Badge variant='outline'>Drizzle</Badge>
-                  <Badge variant='outline'>Stripe</Badge>
-                  <Badge variant='outline'>Shadcn/ui</Badge>
-                  <Badge variant='outline'>UploadThing</Badge>
-                  <Badge variant='outline'>Supabase</Badge>
-                  <Badge variant='outline'>Zod</Badge>
-                  <Badge variant='outline'>Resend</Badge>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='space-y-2'>
+            <div className='flex gap-4'>
+              <a href='https://ec.jongreen.dev/' target='_blank' className='shrink-0'>
+                <img
+                  src={eventcapturepreview}
+                  alt='Event Capture website preview'
+                  width={1000}
+                  height={1000}
+                  loading='lazy'
+                  className='rounded border w-40 aspect-square object-cover'
+                />
+              </a>
+              <div className='ml-5 -mt-1 flex flex-col justify-between'>
+                <div>
+                  <div className='flex items-center gap-2'>
+                    <div className='flex items-center'>
+                      <a
+                        href='https://ec.jongreen.dev/'
+                        target='_blank'
+                        className='underline underline-offset-2 decoration-1 hover:text-blue-300'
+                      >
+                        <h3 className='text-xl tracking-tight'>Event Capture</h3>
+                      </a>
+                      <span className='text-amber-500 text-xl ml-2 select-none'>
+                        •
+                      </span>
+                    </div>
+                    <a href='https://github.com/jongreen96/EventCapture' target='_blank'>
+                      <img
+                        src={githubicon}
+                        alt='Event Capture source on GitHub'
+                        className='size-4'
+                      />
+                    </a>
+                  </div>
+                  <ul className='list-disc text-muted-foreground text-sm text-pretty'>
+                  <li>
+                    Built an event-media app where guests share original-quality
+                    photos and videos through a link or QR code without signing up.
+                  </li>
+                  <li>
+                    Implemented direct-to-R2 uploads with retries, access controls
+                    and storage-quota tracking.
+                  </li>
+                  <li>
+                    Created organiser tools for media management, downloadable
+                    archives and scheduled file cleanup.
+                  </li>
+                  </ul>
+                </div>
+                <div className='flex flex-wrap gap-1'>
+                  <Badge variant='secondary'>React</Badge>
+                  <Badge variant='secondary'>TypeScript</Badge>
+                  <Badge variant='secondary'>TanStack Start</Badge>
+                  <Badge variant='secondary'>Tailwind CSS</Badge>
+                  <Badge variant='outline'>Cloudflare Workers</Badge>
+                  <Badge variant='outline'>D1</Badge>
+                  <Badge variant='outline'>R2</Badge>
+                  <Badge variant='outline'>Queues</Badge>
+                  <Badge variant='outline'>Drizzle</Badge>
                 </div>
               </div>
             </div>
@@ -358,10 +407,9 @@ function App() {
             </span>
 
             <p className='text-muted-foreground text-sm text-pretty'>
-              Completed Harvard&apos;s renowned CS50x course, gaining a deep
-              understanding of computer science fundamentals, algorithms, and
-              programming. This rigorous learning experience further refined my
-              problem-solving skills and broadened my technical proficiency.
+              Completed CS50x, covering computer science fundamentals, algorithms
+              and programming. Applied that foundation to problem-solving across my
+              own web projects.
             </p>
           </div>
 
@@ -372,7 +420,7 @@ function App() {
                 target='_blank'
                 className='underline underline-offset-2 decoration-1 hover:text-blue-300'
               >
-                <h3 className='text-xl tracking-tight'>CodeCademy</h3>
+                <h3 className='text-xl tracking-tight'>Codecademy</h3>
               </a>
               <p className='text-muted-foreground text-sm text-pretty'>
                 2023 - 2024
@@ -380,10 +428,9 @@ function App() {
             </span>
 
             <p className='text-muted-foreground text-sm text-pretty'>
-              Completed the Full Stack Web Developer Bootcamp, mastering
-              essential web development fundamentals with hands-on experience in
-              React, Node.js, and SQL. This immersive program provided a strong
-              foundation for building modern, scalable applications.
+              Completed the Full-Stack Engineer path, building practical experience
+              with React, Node.js, SQL and the connections between browser, server
+              and database.
             </p>
           </div>
 
@@ -404,9 +451,8 @@ function App() {
             </span>
 
             <p className='text-muted-foreground text-sm text-pretty'>
-              Earned a Level 3 Diploma in IT with a focus on Web Development and
-              database design. This program honed my technical skills and
-              deepened my understanding of digital technologies.
+              Earned a Level 3 Diploma in IT, with a focus on web development and
+              database design.
             </p>
           </div>
 
@@ -425,10 +471,8 @@ function App() {
             </span>
 
             <p className='text-muted-foreground text-sm text-pretty'>
-              Achieved over 5 A*-C Level 2 certificates, including a distinction
-              in webpage creation and computer graphics. This formative
-              education sparked my passion for technology and laid the
-              groundwork for my future studies in IT and web development.
+              Achieved more than five A*–C Level 2 certificates, including a
+              distinction in webpage creation and computer graphics.
             </p>
           </div>
         </div>
@@ -438,17 +482,14 @@ function App() {
         <h2 className='text-2xl font-semibold tracking-tight pb-4'>About Me</h2>
 
         <p className='text-muted-foreground text-sm text-pretty'>
-          I've always been passionate about technology, from early IT studies to
-          running a small business in digital design. In recent years Ive
-          focused on web development, building modern applications with React,
-          Next.js, and PostgreSQL while completing projects that solve
-          real-world problems. Alongside this, I've expanded into DevOps to
-          support and scale my work, managing deployments on Hetzner VPS and in
-          a home-lab environment with Docker and Raspberry Pi. By configuring
-          nginx, Cloudflare, and Coolify, I've gained hands-on experience with
-          automation, SSL, firewalls, monitoring, and backups. I'm eager to
-          continue developing both my web development and DevOps expertise as
-          part of a professional team.
+          My background combines software development with running a small
+          digital design business. Building and operating that store shaped how I approach
+          software: understand the customer, make the core task straightforward and
+          take responsibility for what happens after launch. Today I build
+          applications across the frontend and backend, with a growing focus on
+          Cloudflare and real-time systems. I also run Linux servers and a home lab,
+          keeping hands-on with deployment, monitoring and backups. I enjoy turning a
+          practical problem into a product I can build, maintain and improve.
         </p>
       </section>
 

@@ -1,64 +1,68 @@
 # Jon Green
 
-**Software Engineer**
+**Full-Stack Developer**
 
-[📍 Sheffield, England](https://www.google.com/maps/place/Sheffield)
+[Sheffield, England](https://www.google.com/maps/place/Sheffield)
 
-[📞 +44 7769674943](tel:+447769674943) • [✉️ jongreen1996@gmail.com](mailto:jongreen1996@gmail.com) • [GitHub](https://github.com/jongreen96)
+[Phone](tel:+447769674943) · [Email](mailto:jongreen1996@gmail.com) · [GitHub](https://github.com/jongreen96)
 
 ---
 
-## Objective
+## Profile
 
-Software engineer with experience in building, deploying, automating, and monitoring applications across VPS and home-lab environments. Skilled with Docker, Linux, Cloudflare, nginx, and Hetzner infrastructure, with a strong foundation in full-stack development (React, Next.js, PostgreSQL). Confident in building and managing reliable systems, while continuously expanding expertise in modern DevOps practices.
+I build full-stack web applications, from the interface and data model to authentication, file storage and deployment. My recent work combines React and TypeScript with Cloudflare Workers, D1 and R2 across finance tools, AI chat and event-media sharing. I focus on clear interfaces and the details that make a product dependable: access control, consistent data and useful recovery when something goes wrong.
 
 ---
 
 ## Technical Skills
 
-**DevOps**  
-`Docker` `Linux` `Cloudflare` `Hetzner` `Nginx` `UFW` `Git`
+**DevOps:** Docker, Linux, Cloudflare, Hetzner, Nginx, Cloudflare Workers, Git
 
-**Frontend**  
-`React` `Next.js` `TypeScript` `JavaScript` `Tailwind`
+**Frontend:** React, Next.js, TypeScript, TanStack Router, TanStack Query, Tailwind CSS
 
-**Backend**  
-`Node.js` `Bun` `Express.js` `PostgreSQL` `AI LLM`
+**Backend:** Node.js, Bun, Hono, Drizzle, PostgreSQL, D1 / SQLite, R2, Durable Objects, Workers AI
 
 ---
 
 ## Projects
 
-### [My-GPT](https://my-gpt.app) [🔗 GitHub](https://github.com/jongreen96/MyGPT)
+### [Sub-Tracked](https://sub-tracked.com) · [GitHub](https://github.com/jongreen96/sub-tracked)
 
-- Deployed to Hetzner with automated deployments, backups, and monitoring through Coolify.
-- Configured DNS and SSL via Cloudflare and Let's Encrypt.
-- Provides AI chat and image generation with pay-as-you-go billing.
+- Built a personal finance app that brings accounts, income and recurring expenses into one place.
+- Modelled payment schedules and account balances to help users plan around upcoming bills.
+- Connected a React interface to authenticated server functions and a D1 database with Drizzle.
 
-**Tech stack:**  
-`Next.js` `React` `TypeScript` `Tailwind CSS` `Prisma` `Stripe` `PostgreSQL` `AuthJS` `Sentry` `Shadcn/ui` `OpenAI API`
-
----
-
-### [Event Capture](https://ec.jongreen.dev/) [🔗 GitHub](https://github.com/jongreen96/Event-Capture)
-
-- Hosted on Hetzner with Coolify handling deployments and database containers.
-- Integrated Cloudflare R2 via S3 API for scalable, cost-effective storage.
-- Uses Tanstack Router and Query for efficient data fetching and state management.
-
-**Tech stack:**  
-`Vite` `React` `TypeScript` `Tailwind CSS` `Tanstack Router` `Tanstack Query` `Cloudflare R2` `PostgreSQL` `Shadcn/ui` `Sharp`
+**Tech stack:** React, TypeScript, TanStack Start, Tailwind CSS, Cloudflare Workers, D1, Drizzle, Better Auth, TanStack Query
 
 ---
 
-### [Green Vinyl Graphics](https://greenvinylgraphics.com) [🔗 GitHub](https://github.com/jongreen96/GreenVinylGraphics)
+### [Green Vinyl Graphics](https://gvg.jongreen.dev) · [GitHub](https://github.com/jongreen96/GreenVinylGraphics)
 
-- Redesigned the platform using Next.js for improved performance.
-- Implemented server-side rendering (SSR) to enhance user experience.
-- Created a seamless and responsive design for mobile devices.
+- Rebuilt my former digital-template store as a portfolio demo, using its original catalogue of 52 products.
+- Created searchable collections, detailed product previews and a persistent basket with a demo checkout.
+- Added responsive artwork, keyboard navigation and reduced-motion support throughout the shopping experience.
 
-**Tech stack:**  
-`Next.js` `React` `TypeScript` `Tailwind CSS` `Drizzle` `Stripe` `Shadcn/ui` `UploadThing` `Supabase` `Zod` `Resend`
+**Tech stack:** React, TypeScript, TanStack Router, Tailwind CSS, Vite, shadcn/ui, Cloudflare Workers
+
+---
+
+### [My-GPT](https://cf.my-gpt.app) · [GitHub](https://github.com/jongreen96/my-gpt-cf)
+
+- Built a multi-model AI chat app with streaming replies, file attachments and editable conversations.
+- Used a Durable Object per conversation to coordinate generation, stream over WebSockets and persist messages.
+- Added guest access with usage limits and account linking that preserves conversation history.
+
+**Tech stack:** React, TypeScript, Hono, Tailwind CSS, Workers AI, Durable Objects, D1, R2, Better Auth, Drizzle
+
+---
+
+### [Event Capture](https://ec.jongreen.dev/) · [GitHub](https://github.com/jongreen96/EventCapture)
+
+- Built an event-media app where guests share original-quality photos and videos through a link or QR code without signing up.
+- Implemented direct-to-R2 uploads with retries, access controls and storage-quota tracking.
+- Created organiser tools for media management, downloadable archives and scheduled file cleanup.
+
+**Tech stack:** React, TypeScript, TanStack Start, Tailwind CSS, Cloudflare Workers, D1, R2, Queues, Drizzle
 
 ---
 
@@ -66,32 +70,22 @@ Software engineer with experience in building, deploying, automating, and monito
 
 ### [Harvard CS50x](https://pll.harvard.edu/course/cs50-introduction-computer-science) — 2024
 
-Completed Harvard’s renowned CS50x course, gaining a deep understanding of computer science fundamentals, algorithms, and programming. This rigorous learning experience further refined my problem-solving skills and broadened my technical proficiency.
+Completed CS50x, covering computer science fundamentals, algorithms and programming. Applied that foundation to problem-solving across my own web projects.
 
----
+### [Codecademy: Full-Stack Engineer](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path) — 2023–2024
 
-### [Codecademy: Full Stack Engineer](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path) — 2023–2024
-
-Completed the Full Stack Web Developer Bootcamp, mastering essential web development fundamentals with hands-on experience in React, Node.js, and SQL. This immersive program provided a strong foundation for building modern, scalable applications.
-
----
+Completed the Full-Stack Engineer path, building practical experience with React, Node.js, SQL and the connections between browser, server and database.
 
 ### [Dearne Valley College](https://www.dearne-coll.ac.uk/) — 2012–2013
 
-Earned a Level 3 Diploma in IT with a focus on Web Development and database design. This program honed my technical skills and deepened my understanding of digital technologies.
-
----
+Earned a Level 3 Diploma in IT, with a focus on web development and database design.
 
 ### [Wingfield Academy](https://www.wingfieldacademy.org/) — 2007–2012
 
-Achieved over 5 A\*-C Level 2 certificates, including a distinction in webpage creation and computer graphics. This formative education sparked my passion for technology and laid the groundwork for my future studies in IT and web development.
+Achieved more than five A*–C Level 2 certificates, including a distinction in webpage creation and computer graphics.
 
 ---
 
 ## About Me
 
-I've always been passionate about technology, from early IT studies to running a small business in digital design. In recent years I’ve focused on web development, building modern applications with React, Next.js, and PostgreSQL while completing projects that solve real-world problems.
-
-Alongside this, I've expanded into DevOps to support and scale my work, managing deployments on Hetzner VPS and in a home-lab environment with Docker and Raspberry Pi. By configuring nginx, Cloudflare, and Coolify, I've gained hands-on experience with automation, SSL, firewalls, monitoring, and backups.
-
-I'm eager to continue developing both my web development and DevOps expertise as part of a professional team.
+My background combines software development with running a small digital design business. Building and operating that store shaped how I approach software: understand the customer, make the core task straightforward and take responsibility for what happens after launch. Today I build applications across the frontend and backend, with a growing focus on Cloudflare and real-time systems. I also run Linux servers and a home lab, keeping hands-on with deployment, monitoring and backups. I enjoy turning a practical problem into a product I can build, maintain and improve.
